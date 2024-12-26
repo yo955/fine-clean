@@ -9,7 +9,7 @@ export const Hero = () => {
         src="/logo/asadco-logo.png"
         className=" flex justify-center items-center w-full h-full bg-cover"
       />
-      <div className="bg-primary "></div>
+      <div className="bg-black "></div>
     </main>
   );
 };
