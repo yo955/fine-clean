@@ -1,3 +1,3 @@
-export { Header } from "./index";
+export { Header } from "./Header";
 export { List } from "./List";
-export { Dropdown } from "./Dropdown";
+// export { Dropdown } from "./Dropdown";
