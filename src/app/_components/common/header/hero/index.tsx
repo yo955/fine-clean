@@ -3,13 +3,13 @@ import { Logo } from "./Logo";
 import { Text } from "./Text";
 export const Hero = () => {
   return (
-    <main className="grid grid-cols-6">
-      <Text className="bg-green-400 col-span-3 text-center" />
+    <main className="grid grid-cols-6 mt-12 ">
+      <Text className="bg-orange col-span-4 text-center p-1" />
       <Logo
         src="/logo/asadco-logo.png"
-        className="bg-yellow-600 flex justify-center items-center w-full h-full p-10 bg-contain"
+        className=" flex justify-center items-center w-full h-full bg-cover"
       />
-      <div className="bg-black col-span-2"></div>
+      <div className="bg-black "></div>
     </main>
   );
 };

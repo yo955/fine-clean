@@ -67,7 +67,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Header />
-        {children}
+        <main className="font-almarai">{children}</main>
         <Footer />
       </body>
     </html>

@@ -2,24 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom root-level variables for colors */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --main-font: "Almarai";
+  --white-color: #ffffff;
+  --black-color: #000000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Global reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Font-face declaration for Almaria */
+@font-face {
+  font-family: var(--main-font);
+  src: url("/fonts/Almarai-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--main-font);
+  src: url("/fonts/Almarai-Regular.ttf.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--main-font);
+  src: url("/fonts/Almarai-Bold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--main-font);
+  src: url("/fonts/Almarai-ExtraBold.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Apply Almaria font to body and specific elements */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--main-font), sans-serif;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--main-font), sans-serif;
+}
+h1 {
+  font-weight: 900;
+}
+h2 {
+  font-weight: 800;
+}
+h3,
+p {
+  font-weight: 400;
 }

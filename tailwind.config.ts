@@ -8,9 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        almarai: ["Almarai", "sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#1E2537",
+        white: "#ffffff",
+        orange: "#FDA720",
+        gray: "#F5F5F5",
+        // gray: "#636b81",
       },
     },
   },
