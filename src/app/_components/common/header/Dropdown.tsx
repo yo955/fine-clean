@@ -8,11 +8,21 @@ interface DropdownProps {
   title: string;
   href: string;
   items: { title: string; href: string }[];
+  setMenuOpen?: (isOpen: boolean) => void;
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ title, href, items }) => {
+const Dropdown: React.FC<DropdownProps> = ({
+  title,
+  href,
+  items,
+  setMenuOpen,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const handleLinkClick = (href: string) => {
+    if (href && setMenuOpen) {
+      setMenuOpen(false);
+    }
+  };
   return (
     <div
       className="relative"
@@ -20,9 +30,9 @@ const Dropdown: React.FC<DropdownProps> = ({ title, href, items }) => {
       onMouseLeave={() => setIsOpen(false)}
       // onClick={()=> setIsOpen(!isOpen)}
     >
-      <Link href={href}>
-        <div className="flex items-center gap-2 cursor-pointer p-2">
-          <h1 className="text-menu_color md:text-orange font-almarai font-bold text-lg md:text-xl lg:text-2xl">
+      <Link href={href} onClick={() => handleLinkClick(href)}>
+        <div className="flex items-center gap-2 cursor-pointer p-2 hover:bg-black_gray md:hover:bg-orange hover:text-white">
+          <h1 className="text-menu_color md:text-orange font-almarai font-bold text-lg md:text-xl lg:text-2xl ">
             {title}
           </h1>
 
@@ -40,12 +50,13 @@ const Dropdown: React.FC<DropdownProps> = ({ title, href, items }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.5 }}
-            className="md:absolute top-full left-0 mt-0 bg-white md:shadow-md md:text-center text-menu_color md:text-orange py-2 px-1 w-40"
+            className="md:absolute top-full left-0 mt-0 w-full bg-white md:shadow-md md:text-center text-menu_color md:text-orange py-2 px-1 md:w-40"
           >
             {items.map((item) => (
               <li
+                onClick={() => handleLinkClick(href)}
                 key={item.title}
-                className="py-1 px-3 hover:bg-gray-200 hover:bg-orange hover:text-white"
+                className="hover:bg-black_gray md:hover:bg-orange py-2 px-3 hover:bg-gray-200  hover:text-white"
               >
                 <Link href={item.href}>
                   <h2 className="text-gray-700 font-almarai text-base md:text-lg ">
@@ -60,5 +71,4 @@ const Dropdown: React.FC<DropdownProps> = ({ title, href, items }) => {
     </div>
   );
 };
-
 export default Dropdown;

@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Dropdown from "../Dropdown";
 import Link from "next/link";
+import Dropdown from "../Dropdown";
 
 interface MobileListProps {
   ListItem: {
@@ -18,6 +18,11 @@ const MobileList: React.FC<MobileListProps> = ({ ListItem }) => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+  const handleLinkClick = (href: string) => {
+    if (href) {
+      setMenuOpen(false);
+    }
   };
 
   return (
@@ -35,7 +40,7 @@ const MobileList: React.FC<MobileListProps> = ({ ListItem }) => {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed top-0 left-0 w-full bg-white p-5 shadow-lg z-50"
+            className="top-0 left-0 w-full bg-white p-5 shadow-lg z-50"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
@@ -45,22 +50,19 @@ const MobileList: React.FC<MobileListProps> = ({ ListItem }) => {
               <ul className="space-y-4">
                 {ListItem.map((item) =>
                   item.dropdown ? (
-                    <li
-                      key={item.title}
-                      className={`${
-                        item.href === window.location.href
-                          ? "bg-black_gray"
-                          : "bg-white"
-                      }`}
-                    >
+                    <li key={item.title} className={``}>
                       <Dropdown
                         href={item.href!}
                         title={item.title}
                         items={item.dropdown}
+                        setMenuOpen={setMenuOpen}
                       />
                     </li>
                   ) : (
-                    <li key={item.title}>
+                    <li
+                      key={item.title}
+                      onClick={() => handleLinkClick(item.href!)}
+                    >
                       <Link href={item.href || "#"}>
                         <h1 className="text-menu_color p-2 hover:bg-black_gray hover:text-white font-almarai font-bold text-lg">
                           {item.title}

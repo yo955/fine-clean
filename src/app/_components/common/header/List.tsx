@@ -1,11 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-
-
-import Dropdown from "./Dropdown";
-
 import MobileList from "./hero/MobileList";
+import Dropdown from "./Dropdown";
 
 interface ListItemType {
   title: string;
@@ -29,11 +26,9 @@ const ListItem: ListItemType[] = [
 ];
 
 export const List: React.FC = () => {
-    return (
+  return (
     <>
-      
-
-      <MobileList />
+      <MobileList ListItem={ListItem} />
 
       {/* القائمة الرئيسية في الشاشات الأكبر */}
       <nav>
