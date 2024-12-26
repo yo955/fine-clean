@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { FaChevronDown } from "react-icons/fa"; // استيراد أيقونة السهم
 
 interface DropdownProps {
   title: string;
@@ -20,9 +21,14 @@ const Dropdown: React.FC<DropdownProps> = ({ title, href, items }) => {
     >
       {/* الرابط الرئيسي */}
       <Link href={href}>
-        <h1 className="text-orange font-almarai font-bold text-2xl cursor-pointer">
-          {title}
-        </h1>
+        <div className="flex items-center gap-2 cursor-pointer">
+          <h1 className="text-orange font-almarai font-bold text-2xl">{title}</h1>
+          <FaChevronDown
+            className={`text-orange transition-transform duration-300 ${
+              isOpen ? "rotate-180" : "rotate-0"
+            }`}
+          />
+        </div>
       </Link>
 
       {/* القائمة المنسدلة مع Framer Motion */}
@@ -32,7 +38,7 @@ const Dropdown: React.FC<DropdownProps> = ({ title, href, items }) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.3 }}
-          className="absolute top-full left-0 mt-0 bg-white shadow-lg p-3 w-fit"
+          className="absolute top-full left-0 mt-2 bg-white shadow-lg p-3 w-fit"
         >
           {items.map((item) => (
             <li key={item.title} className="py-1 px-3 hover:bg-gray-200">
