@@ -1,8 +1,11 @@
+import { Footer, Header } from "./_components";
 
 export default function Home() {
   return (
-   <h1>home</h1>
-   
+    <>
+      <Header />
+      <h1>home</h1>
+      <Footer />
+    </>
   );
 }
-
