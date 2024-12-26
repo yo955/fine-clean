@@ -28,21 +28,21 @@ const Dropdown: React.FC<DropdownProps> = ({
       className="relative"
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
-      // onClick={()=> setIsOpen(!isOpen)}
+      onClick={() => setIsOpen(!isOpen)}
     >
-      <Link href={href} onClick={() => handleLinkClick(href)}>
-        <div className="flex items-center gap-2 cursor-pointer p-2 hover:bg-black_gray md:hover:bg-orange hover:text-white">
-          <h1 className="text-menu_color md:text-orange font-almarai font-bold text-lg md:text-xl lg:text-2xl ">
+      <div className="flex items-center gap-2 cursor-pointer p-2 hover:bg-black_gray md:hover:bg-gray hover:text-white">
+        <Link href={href} onClick={() => handleLinkClick(href)}>
+          <h1 className="text-menu_color md:text-orange  font-almarai font-bold text-lg md:text-xl lg:text-2xl ">
             {title}
           </h1>
+        </Link>
+        <FaChevronDown
+          className={`text-menu_color md:text-orange  transition-transform duration-300 ${
+            isOpen ? "rotate-180" : "rotate-0"
+          }`}
+        />
+      </div>
 
-          <FaChevronDown
-            className={`text-menu_color md:text-orange  transition-transform duration-300 ${
-              isOpen ? "rotate-180" : "rotate-0"
-            }`}
-          />
-        </div>
-      </Link>
       <AnimatePresence>
         {isOpen && (
           <motion.ul

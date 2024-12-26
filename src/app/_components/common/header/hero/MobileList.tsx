@@ -40,7 +40,7 @@ const MobileList: React.FC<MobileListProps> = ({ ListItem }) => {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="top-0 left-0 w-full bg-white p-5 shadow-lg z-50"
+            className="top-0 left-0 w-full bg-white p-5 shadow-lg z-50 md:hidden"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
