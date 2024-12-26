@@ -21,13 +21,13 @@ const Dropdown: React.FC<DropdownProps> = ({ title, href, items }) => {
       // onClick={()=> setIsOpen(!isOpen)}
     >
       <Link href={href}>
-        <div className="flex items-center gap-2 cursor-pointer">
-          <h1 className="text-orange font-almarai font-bold text-2xl">
+        <div className="flex items-center gap-2 cursor-pointer p-2">
+          <h1 className="text-menu_color md:text-orange font-almarai font-bold text-lg md:text-xl lg:text-2xl">
             {title}
           </h1>
 
           <FaChevronDown
-            className={`text-orange transition-transform duration-300 ${
+            className={`text-menu_color md:text-orange  transition-transform duration-300 ${
               isOpen ? "rotate-180" : "rotate-0"
             }`}
           />
@@ -40,12 +40,15 @@ const Dropdown: React.FC<DropdownProps> = ({ title, href, items }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.5 }}
-            className="absolute top-full left-0 mt-2 bg-white shadow-lg p-3 w-fit"
+            className="md:absolute top-full left-0 mt-0 bg-white md:shadow-md md:text-center text-menu_color md:text-orange py-2 px-1 w-40"
           >
             {items.map((item) => (
-              <li key={item.title} className="py-1 px-3 hover:bg-gray-200">
+              <li
+                key={item.title}
+                className="py-1 px-3 hover:bg-gray-200 hover:bg-orange hover:text-white"
+              >
                 <Link href={item.href}>
-                  <h2 className="text-gray-700 font-almarai text-lg">
+                  <h2 className="text-gray-700 font-almarai text-base md:text-lg ">
                     {item.title}
                   </h2>
                 </Link>

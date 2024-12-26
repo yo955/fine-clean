@@ -16,6 +16,8 @@ export default {
         white: "#ffffff",
         orange: "#FDA720",
         gray: "#F5F5F5",
+        menu_color: "#33373d",
+        black_gray: "#3f444b",
         // gray: "#636b81",
       },
     },

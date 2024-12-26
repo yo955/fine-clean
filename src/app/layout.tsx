@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Footer, Header } from "./_components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -65,7 +66,9 @@ export default function RootLayout({
         </script>
       </head>
       <body className={inter.className}>
+        <Header />
         <main className="font-almarai">{children}</main>
+        <Footer />
       </body>
     </html>
   );
