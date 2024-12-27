@@ -4,10 +4,10 @@ import RightSections from "./RightSections";
 
 const HeroSection = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 mb-10 max-h-[620px]">
+    <section className="grid grid-cols-1 lg:grid-cols-2 mb-10">
       <RightSections />
       <LeftSection />
-    </div>
+    </section>
   );
 };
 
