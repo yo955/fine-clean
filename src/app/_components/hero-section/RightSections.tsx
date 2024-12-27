@@ -1,15 +1,7 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import dynamic from "next/dynamic";
+import React from "react";
+import VideoCommon from "../common/Video";
 
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 const RightSections = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
   return (
     <div className="h-full bg-primary text-white p-8">
       <div className="description mb-5">
@@ -33,14 +25,7 @@ const RightSections = () => {
         اطلب الآن
       </button>
       <div className="video mt-10 h-[250px] flex justify-center items-center">
-        {isClient && (
-          <ReactPlayer
-            url="https://youtu.be/-Wi8YgylkUk"
-            width="90%"
-            height="100%"
-            controls
-          />
-        )}
+        <VideoCommon width={90} height={100} />
       </div>
     </div>
   );
