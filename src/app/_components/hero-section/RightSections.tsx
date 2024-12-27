@@ -32,7 +32,7 @@ const RightSections = () => {
       <button className="bg-orange text-xl font-bold flex justify-center items-center p-2 md:p-3 lg:p-4 border-none rounded-full w-40 shadow-gray hover:shadow-md hover:bg-amber-400 transition-all duration-300">
         اطلب الآن
       </button>
-      <div className="video mt-10 h-[250px]">
+      <div className="video mt-10 h-[250px] flex justify-center items-center">
         {isClient && (
           <ReactPlayer
             url="https://youtu.be/-Wi8YgylkUk"
