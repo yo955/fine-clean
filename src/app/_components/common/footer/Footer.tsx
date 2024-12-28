@@ -1,6 +1,11 @@
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import {
+  // FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaTiktok,
+  FaSnapchat,
+  FaYoutube,
+} from "react-icons/fa";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa6";
 export const Footer = () => {
@@ -10,7 +15,7 @@ export const Footer = () => {
         <div className="top flex flex-wrap gap-5 md:flex-nowrap justify-between items-center ">
           <div className=" mt-8 font-almarai font-medium">
             <h3 className="text-xl md:text-2xl text-center w-full md:text-right md:w-[80%]">
-              هل أنت مستعد الان لكي تصبح احد عملاء شركة أمكو  النموذجية اتصل بنا
+              هل أنت مستعد الان لكي تصبح احد عملاء شركة أمكو النموذجية اتصل بنا
               وكن احد عملائنا المميزين
             </h3>
           </div>
@@ -24,9 +29,42 @@ export const Footer = () => {
           <div className="flex flex-col items-center order-3 md:order-1">
             <h3 className="text-xl font-bold font-arabic mb-4">تابعنا</h3>
             <div className="flex gap-1 justify-around items-center ">
-              <FaFacebook className="text-4xl cursor-pointer hover:shadow-sm hover:shadow-gray p-1 rounded-lg" />
-              <FaInstagram className="text-4xl cursor-pointer hover:shadow-sm hover:shadow-gray p-1 rounded-lg" />
-              <FaTwitter className="text-4xl cursor-pointer hover:shadow-sm hover:shadow-gray p-1 rounded-lg" />
+              {/* <FaFacebook className="text-4xl cursor-pointer hover:shadow-sm hover:shadow-gray p-1 rounded-lg" /> */}
+              <Link
+                href={"http://www.twitter.com/asad_companySA"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter className="text-4xl cursor-pointer hover:shadow-sm hover:shadow-gray p-1 rounded-lg" />
+              </Link>
+              <Link
+                href={"http://www.tiktok.com/@asadunitedco"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTiktok className="text-4xl cursor-pointer hover:shadow-sm hover:shadow-gray p-1 rounded-lg" />
+              </Link>
+              <Link
+                href={"http://instagram.com/AsadUnitedCoSA"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="text-4xl cursor-pointer hover:shadow-sm hover:shadow-gray p-1 rounded-lg" />
+              </Link>
+              <Link
+                href={"https://snapchat.com/t/hNVKQmcO"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaSnapchat className="text-4xl cursor-pointer hover:shadow-sm hover:shadow-gray p-1 rounded-lg" />
+              </Link>
+              <Link
+                href={"http://youtube.com/@AsadUnitedCoSA"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaYoutube className="text-4xl cursor-pointer hover:shadow-sm hover:shadow-gray p-1 rounded-lg" />
+              </Link>
             </div>
           </div>
           <div className="flex flex-col items-center order-2 font-arabic font-bold">
@@ -64,13 +102,13 @@ export const Footer = () => {
               <FaWhatsapp className="font-bold text-5xl mb-5 hover:shadow-sm hover:shadow-gray rounded-md p-1" />
             </Link>
             <Link
-            href="https://wa.me/0501144066"
-            className="text-white transition hover:text-gray-500/75 text-xl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p>0501144066</p>
-          </Link>
+              href="https://wa.me/0501144066"
+              className="text-white transition hover:text-gray-500/75 text-xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>0501144066</p>
+            </Link>
             {/* <p>info@nomu.com.sa</p> */}
           </div>
         </div>
