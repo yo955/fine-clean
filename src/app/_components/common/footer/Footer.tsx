@@ -63,14 +63,14 @@ export const Footer = () => {
             >
               <FaWhatsapp className="font-bold text-5xl mb-5 hover:shadow-sm hover:shadow-gray rounded-md p-1" />
             </Link>
-            {/* <Link
-            href="https://wa.me/966553810363"
+            <Link
+            href="https://wa.me/966566646662"
             className="text-white transition hover:text-gray-500/75 text-xl"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p> 966553810363+</p>
-          </Link> */}
+            <p>566646662</p>
+          </Link>
             {/* <p>info@nomu.com.sa</p> */}
           </div>
         </div>
