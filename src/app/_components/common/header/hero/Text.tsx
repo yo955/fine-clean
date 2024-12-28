@@ -9,7 +9,7 @@ export const Text: React.FC<TextProps> = ({ className }) => {
       <div className="text flex justify-around items-center h-full">
         <div className="arabic max-h-fit ">
           <h1 className="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3.7rem] text-primary font-bold tracking-wide lg:tracking-[0.08rem]">
-            آم<span className="text-white">گــ</span>و
+          آمـ<span className="text-white">گــ</span>و
           </h1>
         </div>
         <div className="english">

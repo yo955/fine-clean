@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="top flex flex-wrap gap-5 md:flex-nowrap justify-between items-center ">
           <div className=" mt-8 font-almarai font-medium">
             <h3 className="text-xl md:text-2xl text-center w-full md:text-right md:w-[80%]">
-              هل أنت مستعد الان لكي تصبح احد عملاء شركة أمكو المتحدة اتصل بنا
+              هل أنت مستعد الان لكي تصبح احد عملاء شركة أمكو  النموذجية اتصل بنا
               وكن احد عملائنا المميزين
             </h3>
           </div>

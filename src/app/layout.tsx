@@ -5,24 +5,24 @@ import { Footer, Header } from "./_components";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "شركة أسادكو المتحدة - خدمات تنظيف الفلل والمنازل",
+  title: "شـركـة آمـكـو النموذجية - خدمات تنظيف الفلل والمنازل",
   description:
     "شركة أسادكو تقدم خدمات تنظيف الفلل والمنازل بأعلى معايير الجودة باستخدام أحدث التقنيات.",
   keywords:
     "تنظيف الفلل, تنظيف المنازل, خدمات تنظيف, تنظيف واجهات, تنظيف خزانات",
-  author: "شركة أسادكو المتحدة",
+  author: "شـركـة آمـكـو النموذجية",
   openGraph: {
-    title: "شركة أسادكو المتحدة - خدمات تنظيف الفلل والمنازل",
+    title: "شـركـة آمـكـو النموذجية - خدمات تنظيف الفلل والمنازل",
     description:
       "شركة أسادكو تقدم خدمات تنظيف الفلل والمنازل بأعلى معايير الجودة.",
     url: "https://www.asadco.com",
-    siteName: "شركة أسادكو المتحدة",
+    siteName: "شـركـة آمـكـو النموذجية",
     images: [
       {
         url: "/images/logo.png",
         width: 800,
         height: 600,
-        alt: "شركة أسادكو المتحدة",
+        alt: "شـركـة آمـكـو النموذجية",
       },
     ],
     type: "website",
@@ -47,7 +47,7 @@ export default function RootLayout({
             {
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "شركة أسادكو المتحدة",
+              "name": " شركة آمـكـو النموذجية",
               "url": "https://www.asadco.com",
               "logo": "https://www.asadco.com/logo.png",
               "sameAs": [
