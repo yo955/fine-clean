@@ -5,8 +5,13 @@ const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 interface VideoProps {
   width: number;
   height: number;
+  url: string;
 }
-const VideoCommon: React.FC<VideoProps> = ({ width = 100, height = 100 }) => {
+const VideoCommon: React.FC<VideoProps> = ({
+  width = 100,
+  height = 100,
+  url = "/videos/video-1.mp4",
+}) => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -17,7 +22,7 @@ const VideoCommon: React.FC<VideoProps> = ({ width = 100, height = 100 }) => {
     <>
       {isClient && (
         <ReactPlayer
-          url="https://youtu.be/-Wi8YgylkUk"
+          url={url}
           width={`${width}%`}
           height={`${height}%`}
           controls

@@ -37,16 +37,16 @@ const Advantages = () => {
         </div>
         <div className="left grid grid-cols-1 md:grid-cols-2 gap-4 p-2">
           <div className="video  h-[200px] flex justify-center items-center">
-            <VideoCommon width={100} height={100} />
+            <VideoCommon url="/videos/video-1.mp4" width={100} height={100} />
           </div>
           <div className="video  h-[200px] flex justify-center items-center">
-            <VideoCommon width={100} height={100} />
+            <VideoCommon url="/videos/video-2.mp4" width={100} height={100} />
           </div>
           <div className="video h-[200px] flex justify-center items-center">
-            <VideoCommon width={100} height={100} />
+            <VideoCommon url="/videos/video-3.mp4" width={100} height={100} />
           </div>
           <div className="video  h-[200px] flex justify-center items-center">
-            <VideoCommon width={100} height={100} />
+            <VideoCommon url="/videos/video-4.mp4" width={100} height={100} />
           </div>
         </div>
       </div>
