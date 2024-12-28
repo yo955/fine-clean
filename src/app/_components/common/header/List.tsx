@@ -12,17 +12,17 @@ interface ListItemType {
 
 const ListItem: ListItemType[] = [
   { title: "الرئيسية", href: "/" },
-  { title: "من نحن", href: "/about" },
-  { title: "مقالات", href: "/articles" },
+  { title: "من نحن", href: "#" },
+  { title: "مقالات", href: "#" },
   {
     title: "خدماتنا",
     href: "/services",
     dropdown: [
-      { title: "المجالات الخدمية", href: "/services/construction" },
-      { title: "المجالات الانشائية", href: "/services/service" },
+      { title: "المجالات الخدمية", href: "#" },
+      { title: "المجالات الانشائية", href: "#" },
     ],
   },
-  { title: "اتصل بنا", href: "/contact" },
+  { title: "اتصل بنا", href: "#" },
 ];
 
 export const List: React.FC = () => {

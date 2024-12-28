@@ -76,13 +76,13 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="about" prefetch={true} className="hover:underline">
+                <Link href="#" prefetch={true} className="hover:underline">
                   من نحن
                 </Link>
               </li>
               <li>
                 <Link
-                  href="services"
+                  href="#"
                   prefetch={true}
                   className="hover:underline"
                 >
