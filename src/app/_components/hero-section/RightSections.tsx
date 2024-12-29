@@ -25,7 +25,7 @@ const RightSections = () => {
         اطلب الآن
       </button>
       <div className="video mt-10 h-[250px] flex justify-center items-center">
-        <VideoCommon url="/videos/video-1.mp4" width={90} height={100} />
+        <VideoCommon url="/videos/main-video.mp4" width={90} height={100} />
       </div>
     </div>
   );

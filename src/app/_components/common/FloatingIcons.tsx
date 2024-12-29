@@ -44,6 +44,25 @@ const FloatingIcons: React.FC = () => {
               <span>0501144066</span> <FaWhatsapp className="text-3xl" />
             </Link>
           </div>
+          {/* GMAIL */}
+          <div
+            className="gmail fixed bg-primary shadow-sm shadow-gray text-white w-fit h-12 rounded-md p-2 flex items-center justify-center gap-2 cursor-pointer transition-opacity duration-300 transform z-50"
+            style={{
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            <Link
+              href="mailto:AMCO112025@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="text-xl cursor-pointer p-1 rounded-lg">
+                AMCO112025@gmail.com
+              </p>
+            </Link>
+          </div>
 
           {/* أيقونة الهاتف */}
           <div

@@ -66,6 +66,17 @@ export const Footer = () => {
                 <FaYoutube className="text-4xl cursor-pointer hover:shadow-sm hover:shadow-gray p-1 rounded-lg" />
               </Link>
             </div>
+            <div className="gmail my-2">
+              <Link
+                 href="mailto:AMCO112025@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="text-xl cursor-pointer shadow-sm shadow-gray p-1 rounded-lg">
+                  AMCO112025@gmail.com
+                </p>
+              </Link>
+            </div>
           </div>
           <div className="flex flex-col items-center order-2 font-arabic font-bold">
             <h3 className="text-xl font-bold mb-4">روابط سريعة</h3>
@@ -81,11 +92,7 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#"
-                  prefetch={true}
-                  className="hover:underline"
-                >
+                <Link href="#" prefetch={true} className="hover:underline">
                   خدمـاتنـا
                 </Link>
               </li>
