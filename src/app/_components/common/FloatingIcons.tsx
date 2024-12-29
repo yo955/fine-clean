@@ -46,7 +46,7 @@ const FloatingIcons: React.FC = () => {
           </div>
           {/* GMAIL */}
           <div
-            className="gmail fixed bg-primary shadow-sm shadow-gray text-white w-fit h-12 rounded-md p-2 flex items-center justify-center gap-2 cursor-pointer transition-opacity duration-300 transform z-50"
+            className="hidden gmail fixed bg-primary shadow-sm shadow-gray text-white w-fit h-12 rounded-md p-2 md:flex items-center justify-center gap-2 cursor-pointer transition-opacity duration-300 transform z-50"
             style={{
               top: "50%",
               left: "50%",
