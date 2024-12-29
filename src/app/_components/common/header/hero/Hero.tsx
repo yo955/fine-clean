@@ -7,7 +7,7 @@ export const Hero = () => {
       <Text className="bg-orange col-span-4 text-center p-1" />
       <Logo
         src="/logo/asadco-logo.png"
-        className=" flex justify-center items-center w-full h-full bg-cover"
+        className=" flex justify-center items-center w-full h-full bg-cover "
       />
       <div className="bg-primary "></div>
     </main>
