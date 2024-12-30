@@ -10,7 +10,7 @@ export const Logo: React.FC<LogoProps> = ({ className, src }) => {
   return (
     <div className="relative flex justify-center items-center">
       <div className={`absolute ${className}`}>
-        <Image src={src} alt="logo" width={200} height={200} className="w-full h-[100px] md:h-auto " />
+        <Image src={src} alt="logo" fill className="w-full h-[100px] md:h-auto " />
       </div>
     </div>
   );
