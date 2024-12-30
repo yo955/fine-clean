@@ -6,7 +6,7 @@ export const Hero = () => {
     <main className="grid grid-cols-6 mt-12 ">
       <Text className="bg-orange col-span-4 text-center p-1" />
       <Logo
-        src="/logo/asadco-logo.png"
+        src="/logo/logo.png"
         className=" flex justify-center items-center w-full h-full bg-cover "
       />
       <div className="bg-primary "></div>
