@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "شـركـة آمـكـو النموذجية",
     images: [
       {
-        url: "/logo/logo.png",
+        logo: "https://www.amcoksa.com/logo/logo.png",
         width: 800,
         height: 600,
         alt: "شـركـة آمـكـو النموذجية",
