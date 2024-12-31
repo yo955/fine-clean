@@ -5,21 +5,23 @@ import { Footer, Header } from "./_components";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "شـركـة آمـكـو النموذجية - خدمات تنظيف الفلل والمنازل",
+  title:
+    "شركة امكو النموذجية - تنظيف منازل نظافة فلل غسيل شقق نقل اثاث عفش عزل خزانات بالرياض 0501144066",
   description:
-    "شركة أسادكو تقدم خدمات تنظيف الفلل والمنازل بأعلى معايير الجودة باستخدام أحدث التقنيات.",
+    "شركة تنظيف منازل منزل بالرياض نظافة فلل فيلا شقق شقه واجهة مبنى واجهات مباني عماره عمائر مكتب مكاتب معرض معارض مطعم مطبخ غسيل مجلس مجالس كنب سجاد موكيت عزل خزان خزانات نقل اثاث الاثاث عفش العفش صيانة مكيف مكيفات رش مبيد مبيدات تعقيم مكافحة حشرات بالرياض الرياض",
   keywords:
     "تنظيف الفلل, تنظيف المنازل, خدمات تنظيف, تنظيف واجهات, تنظيف خزانات",
   author: "شـركـة آمـكـو النموذجية",
   openGraph: {
-    title: "شـركـة آمـكـو النموذجية - خدمات تنظيف الفلل والمنازل",
+    title:
+      "شركة امكو النموذجية - تنظيف منازل نظافة فلل غسيل شقق نقل اثاث عفش عزل خزانات بالرياض 0501144066",
     description:
-      "شركة أسادكو تقدم خدمات تنظيف الفلل والمنازل بأعلى معايير الجودة.",
-    url: "https://www.asadco.com",
+      "شركة تنظيف منازل منزل بالرياض نظافة فلل فيلا شقق شقه واجهة مبنى واجهات مباني عماره عمائر مكتب مكاتب معرض معارض مطعم مطبخ غسيل مجلس مجالس كنب سجاد موكيت عزل خزان خزانات نقل اثاث الاثاث عفش العفش صيانة مكيف مكيفات رش مبيد مبيدات تعقيم مكافحة حشرات بالرياض الرياض",
+    url: "https://www.amcoksa.com",
     siteName: "شـركـة آمـكـو النموذجية",
     images: [
       {
-        url: "/images/logo.png",
+        url: "/logo/logo.png",
         width: 800,
         height: 600,
         alt: "شـركـة آمـكـو النموذجية",
@@ -29,8 +31,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@asadco",
-    creator: "@asadco",
+    site: "@amcoksa",
+    creator: "@amkoksa",
   },
 };
 
@@ -48,15 +50,15 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": " شركة آمـكـو النموذجية",
-              "url": "https://www.asadco.com",
-              "logo": "https://www.asadco.com/logo.png",
+              "url": "https://www.amcoksa.com",
+              "logo": "https://www.amcoksa.com",
               "sameAs": [
-                "https://www.facebook.com/asadco",
-                "https://twitter.com/asadco"
+                "https://www.facebook.com/amcoksa",
+                "https://x.com/asad_companySA",
               ],
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+1234567890",
+                "telephone": "0501144066",
                 "contactType": "Customer Service",
                 "areaServed": "SA",
                 "availableLanguage": "Arabic"
