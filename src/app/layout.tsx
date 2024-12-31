@@ -51,7 +51,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": " شركة آمـكـو النموذجية",
               "url": "https://www.amcoksa.com",
-              "logo": "https://www.amcoksa.com",
+              "logo": "https://www.amcoksa.com/logo/logo.png"
               "sameAs": [
                 "https://www.facebook.com/amcoksa",
                 "https://x.com/asad_companySA",
