@@ -27,12 +27,57 @@ export const metadata = {
         alt: "شـركـة آمـكـو النموذجية",
       },
     ],
+    videos: [
+      {
+        url: "https://www.amcoksa.com/videos/main-video.mp4",
+        type: "video/mp4",
+        width: 1280,
+        height: 720,
+        alt: "فيديو رئيسي من شركة آمكو النموذجية",
+      },
+      {
+        url: "https://www.amcoksa.com/videos/video-1.mp4",
+        type: "video/mp4",
+        width: 1280,
+        height: 720,
+        alt: "فيديو 1 من شركة آمكو النموذجية",
+      },
+      {
+        url: "https://www.amcoksa.com/videos/video-2.mp4",
+        type: "video/mp4",
+        width: 1280,
+        height: 720,
+        alt: "فيديو 2 من شركة آمكو النموذجية",
+      },
+      {
+        url: "https://www.amcoksa.com/videos/video-3.mp4",
+        type: "video/mp4",
+        width: 1280,
+        height: 720,
+        alt: "فيديو 3 من شركة آمكو النموذجية",
+      },
+      {
+        url: "https://www.amcoksa.com/videos/video-4.mp4",
+        type: "video/mp4",
+        width: 1280,
+        height: 720,
+        alt: "فيديو 4 من شركة آمكو النموذجية",
+      },
+    ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     site: "@amcoksa",
     creator: "@amkoksa",
+    videos: [
+      {
+        url: "https://www.amcoksa.com/videos/main-video.mp4",
+        type: "video/mp4",
+        width: 1280,
+        height: 720,
+      },
+    ],
   },
 };
 
