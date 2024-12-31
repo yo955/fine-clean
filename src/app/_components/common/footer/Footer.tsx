@@ -19,11 +19,18 @@ export const Footer = () => {
               وكن احد عملائنا المميزين
             </h3>
           </div>
-          <div className="btn flex-1">
-            <button className="mx-auto md:mx-0 bg-transparent text-2xl font-bold flex justify-center items-center p-3 md:p-4  rounded-full w-40 shadow-sm shadow-gray hover:shadow-md hover:border hover:border-gray transition-all duration-300 text-white ">
-              <span className="ml-1">→</span> اطلب الآن
-            </button>
-          </div>
+          <Link
+            href="https://wa.me/0501144066"
+            className="text-white transition hover:text-gray-500/75 text-xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="btn flex-1">
+              <button className="mx-auto md:mx-0 bg-transparent text-2xl font-bold flex justify-center items-center p-3 md:p-4  rounded-full w-40 shadow-sm shadow-gray hover:shadow-md hover:border hover:border-gray transition-all duration-300 text-white ">
+                <span className="ml-1">→</span> اطلب الآن
+              </button>
+            </div>
+          </Link>
         </div>
         <div className="bottom shadow-sm shadow-gray  rounded-3xl flex flex-col md:flex-row justify-center md:justify-between p-2 md:px-10 gap-6 md:gap-8 ">
           <div className="flex flex-col items-center order-3 md:order-1">
@@ -68,7 +75,7 @@ export const Footer = () => {
             </div>
             <div className="gmail my-2">
               <Link
-                 href="mailto:AMCO112025@gmail.com"
+                href="mailto:AMCO112025@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >

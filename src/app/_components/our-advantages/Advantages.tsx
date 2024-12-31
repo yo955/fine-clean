@@ -1,5 +1,6 @@
 import React from "react";
 import VideoCommon from "../common/Video";
+import Link from "next/link";
 
 const Advantages = () => {
   return (
@@ -29,11 +30,18 @@ const Advantages = () => {
               </ul>
             </div>
           </div>
-          <div className="btn my-10">
-            <button className="bg-orange text-xl font-bold flex justify-center items-center p-3 md:p-4 border-none rounded-full w-40 shadow-sm shadow-gray hover:shadow-md hover:bg-amber-400 transition-all duration-300 text-white">
-              اطلب الآن
-            </button>
-          </div>
+          <Link
+            href="https://wa.me/0501144066"
+            className="text-white transition hover:text-gray-500/75 text-xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="btn my-10">
+              <button className="bg-orange text-xl font-bold flex justify-center items-center p-3 md:p-4 border-none rounded-full w-40 shadow-sm shadow-gray hover:shadow-md hover:bg-amber-400 transition-all duration-300 text-white">
+                اطلب الآن
+              </button>
+            </div>
+          </Link>
         </div>
         <div className="left grid grid-cols-1 md:grid-cols-2 gap-4 p-2">
           <div className="video  h-[200px] flex justify-center items-center">

@@ -1,5 +1,6 @@
 import React from "react";
 import VideoCommon from "../common/Video";
+import Link from "next/link";
 
 const RightSections = () => {
   return (
@@ -8,7 +9,7 @@ const RightSections = () => {
         <p className="w-full text-wrap text-justify text-sm md:text-base leading-5 lg:leading-6">
           من أجلكم أنتـم ..
           <br />
-          نحن شركة آمكو  النموذجية للمقاولات والانشاء والتعمير ولتقديم المجالات
+          نحن شركة آمكو النموذجية للمقاولات والانشاء والتعمير ولتقديم المجالات
           الخدمية واللوجستية التالية:-
           <br />
           شركة تنظيف مبنى مباني قصر قصور عماره عمائر منزل منازل نظافة فيلا فلل
@@ -21,9 +22,16 @@ const RightSections = () => {
           العالمية وتعد اسادكو من افضل الشركات كذلك تعبر شركات الرياض والمملكة
         </p>
       </div>
-      <button className="bg-orange text-xl font-bold flex justify-center items-center p-2 md:p-3 lg:p-4 border-none rounded-full w-40 shadow-gray hover:shadow-md hover:bg-amber-400 transition-all duration-300">
-        اطلب الآن
-      </button>
+      <Link
+        href="https://wa.me/0501144066"
+        className="text-white transition hover:text-gray-500/75 text-xl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button className="bg-orange text-xl font-bold flex justify-center items-center p-2 md:p-3 lg:p-4 border-none rounded-full w-40 shadow-gray hover:shadow-md hover:bg-amber-400 transition-all duration-300">
+          اطلب الآن
+        </button>
+      </Link>
       <div className="video mt-10 h-[250px] flex justify-center items-center">
         <VideoCommon url="/videos/main-video.mp4" width={100} height={100} />
       </div>
