@@ -44,6 +44,11 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <head>
+        {/* إضافة meta tag هنا */}
+        <meta
+          name="google-site-verification"
+          content="sba9tCIoW2AoAikPfDaIj6YWxzI8rmBD-Hpwroi3450"
+        />
         <script type="application/ld+json">
           {`
             {
@@ -51,10 +56,10 @@ export default function RootLayout({
               "@type": "Organization",
               "name": " شركة آمـكـو النموذجية",
               "url": "https://www.amcoksa.com",
-              "logo": "https://www.amcoksa.com/logo/logo.png"
+              "logo": "https://www.amcoksa.com/logo/logo.png",
               "sameAs": [
                 "https://www.facebook.com/amcoksa",
-                "https://x.com/asad_companySA",
+                "https://x.com/asad_companySA"
               ],
               "contactPoint": {
                 "@type": "ContactPoint",
