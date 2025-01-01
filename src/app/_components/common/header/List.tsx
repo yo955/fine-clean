@@ -12,17 +12,17 @@ interface ListItemType {
 
 const ListItem: ListItemType[] = [
   { title: "الرئيسية", href: "/" },
-  { title: "من نحن", href: "#" },
-  { title: "مقالات", href: "#" },
+  { title: "من نحن", href: "/" },
+  { title: "مقالات", href: "/" },
   {
     title: "خدماتنا",
-    href: "#",
+    href: "/",
     dropdown: [
-      { title: "المجالات الخدمية", href: "#" },
-      { title: "المجالات الانشائية", href: "#" },
+      { title: "المجالات الخدمية", href: "/" },
+      { title: "المجالات الانشائية", href: "/" },
     ],
   },
-  { title: "اتصل بنا", href: "#" },
+  { title: "اتصل بنا", href: "/" },
 ];
 
 export const List: React.FC = () => {
@@ -44,7 +44,7 @@ export const List: React.FC = () => {
               </li>
             ) : (
               <li key={item.title}>
-                <Link href={item.href || "#"}>
+                <Link href={item.href || "/"}>
                   <h1 className="text-menu_color md:text-orange md:hover:text-orange font-almarai font-bold text-2xl">
                     {item.title}
                   </h1>
