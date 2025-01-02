@@ -101,10 +101,13 @@ export default function RootLayout({
       "name": "شركة آمـكـو النموذجية",
       "url": "https://www.amcoksa.com",
       "logo": "https://www.amcoksa.com/logo/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/amcoksa",
-        "https://x.com/asad_companySA"
-      ],
+   "sameAs": [
+  "https://x.com/asad_companySA",
+  "https://www.tiktok.com/@asadunitedco",
+  "https://www.instagram.com/AsadUnitedCoSA/",
+  "https://www.snapchat.com/add/sh-iz1?invite_id=55IfyKbg&locale=ar_SA%40calendar%3Dgregorian&share_id=mJQrd00dSoqbG33alWvAEA&sid=a124c58240ab4926ace691d736404c89",
+  "https://www.youtube.com/@AsadUnitedCoSA"
+  ],
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+966501144066",
