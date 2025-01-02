@@ -5,8 +5,7 @@ import { Footer, Header } from "./_components";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title:
-    "شركة امكو - تنظيف منازل نظافة فلل غسيل شقق نقل اثاث عفش - عزل خزان 0501144066",
+  title: "0501144066 -شركة امكو - تنظيف منازل فلل شقق نقل اثاث عفش عزل ",
   description:
     "شركة تنظيف منازل منزل بالرياض نظافة فلل فيلا شقق شقه واجهة مبنى واجهات مباني عماره عمائر مكتب مكاتب معرض معارض مطعم مطبخ غسيل مجلس مجالس كنب سجاد موكيت عزل خزان خزانات نقل اثاث الاثاث عفش العفش صيانة مكيف مكيفات رش مبيد مبيدات تعقيم مكافحة حشرات بالرياض الرياض",
   keywords:
@@ -96,25 +95,30 @@ export default function RootLayout({
         />
         <script type="application/ld+json">
           {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": " شركة آمـكـو النموذجية",
-              "url": "https://www.amcoksa.com",
-              "logo": "https://www.amcoksa.com/logo/logo.png",
-              "sameAs": [
-                "https://www.facebook.com/amcoksa",
-                "https://x.com/asad_companySA"
-              ],
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "0501144066",
-                "contactType": "Customer Service",
-                "areaServed": "SA",
-                "availableLanguage": "Arabic"
-              }
-            }
-          `}
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "شركة آمـكـو النموذجية",
+      "url": "https://www.amcoksa.com",
+      "logo": "https://www.amcoksa.com/logo/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/amcoksa",
+        "https://x.com/asad_companySA"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+966501144066",
+        "contactType": "Customer Service",
+        "areaServed": "SA",
+        "availableLanguage": "Arabic"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Riyadh",
+        "addressCountry": "SA"
+      }
+    }
+  `}
         </script>
       </head>
       <body className={inter.className}>
