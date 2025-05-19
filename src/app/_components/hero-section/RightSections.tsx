@@ -23,7 +23,7 @@ const RightSections = () => {
         </p>
       </div>
       <Link
-        href="https://wa.me/0501144066"
+        href="https://wa.me/966501144066"
         className="text-white transition hover:text-gray-500/75 text-xl"
         target="_blank"
         rel="noopener noreferrer"
@@ -37,7 +37,6 @@ const RightSections = () => {
           url="/videos/main-video.mp4" 
           width={100} 
           height={100} 
-          thumbnailUrl="/thumbnails/main-video.jpg"
         />
       </div>
     </div>

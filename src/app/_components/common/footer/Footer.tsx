@@ -22,7 +22,7 @@ export const Footer = () => {
 
           <div className="btn flex-1">
             <Link
-              href="https://wa.me/0501144066"
+              href="https://wa.me/966501144066"
               className="text-white transition hover:text-gray-500/75 text-xl"
               target="_blank"
               rel="noopener noreferrer"
@@ -109,7 +109,7 @@ export const Footer = () => {
           <div className="flex flex-col items-center order-1 md:order-3 font-arabic">
             <h3 className="text-xl mb-4">تواصل معنا</h3>
             <Link
-              href="https://wa.me/0501144066"
+              href="https://wa.me/966501144066"
               className="text-white transition hover:text-gray-500/75 text-xl"
               target="_blank"
               rel="noopener noreferrer"
@@ -117,12 +117,12 @@ export const Footer = () => {
               <FaWhatsapp className="font-bold text-5xl mb-5 hover:shadow-sm hover:shadow-gray rounded-md p-1" />
             </Link>
             <Link
-              href="https://wa.me/0501144066"
+              href="tel:+966501144066"
               className="text-white transition hover:text-gray-500/75 text-xl"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p>0501144066</p>
+              <p>‏‎+966 50 114 4066‎‏</p>
             </Link>
             {/* <p>info@nomu.com.sa</p> */}
           </div>
