@@ -103,7 +103,22 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.amcoksa.com" />
         
         {/* Add preload for critical resources */}
-        <link rel="preload" as="image" href="/logo/logo.png" />
+        <link 
+          rel="preload" 
+          as="image" 
+          href="/logo/logo.png" 
+          type="image/png"
+          fetchPriority="high"
+        />
+        
+        {/* Add preload for logo images */}
+        <link 
+          rel="preload" 
+          as="image" 
+          href="/logo/asadco-logo.png" 
+          type="image/png"
+          fetchPriority="high"
+        />
         
         {/* Schema markup */}
         <script type="application/ld+json">
