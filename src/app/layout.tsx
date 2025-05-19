@@ -2,7 +2,11 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Footer, Header } from "./_components";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: 'swap',
+  preload: true,
+});
 
 export const metadata = {
   title: "0501144066 -شركة امكو - تنظيف منازل فلل شقق نقل اثاث عفش عزل ",
@@ -88,11 +92,20 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <head>
-        {/* إضافة meta tag هنا */}
+        {/* Google site verification */}
         <meta
           name="google-site-verification"
           content="sba9tCIoW2AoAikPfDaIj6YWxzI8rmBD-Hpwroi3450"
         />
+        
+        {/* Add preconnect for performance */}
+        <link rel="preconnect" href="https://www.amcoksa.com" />
+        <link rel="dns-prefetch" href="https://www.amcoksa.com" />
+        
+        {/* Add preload for critical resources */}
+        <link rel="preload" as="image" href="/logo/logo.png" />
+        
+        {/* Schema markup */}
         <script type="application/ld+json">
           {`
     {

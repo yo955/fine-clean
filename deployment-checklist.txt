@@ -1,0 +1,32 @@
+
+WEBSITE DEPLOYMENT CHECKLIST
+===========================
+
+Performance Optimizations:
+-------------------------
+[ ] Compress large video files (recommended tool: Handbrake - https://handbrake.fr/)
+[ ] Generate proper video thumbnails
+[ ] Optimize images with a tool like TinyPNG or ImageOptim
+[ ] Consider lazy loading videos only when they're in viewport
+
+Before Deploying to Vercel:
+-------------------------
+[ ] Run 'yarn build' to build the optimized production version
+[ ] Test the build locally with 'yarn start'
+[ ] Check if all pages load properly
+[ ] Verify all links work correctly
+
+After Deployment:
+-------------------------
+[ ] Test website performance with Google PageSpeed Insights (https://pagespeed.web.dev/)
+[ ] Ensure Google Search Console is properly set up
+[ ] Verify site performance on mobile devices
+[ ] Check loading times from different locations
+
+Total video size: 47.99 MB
+
+Large videos (>5MB) that should be optimized:
+- video-1.mp4 (21.51 MB)
+- video-4.mp4 (18.79 MB)
+
+Date: 5/19/2025, 11:24:02 AM
