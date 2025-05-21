@@ -4,9 +4,9 @@ import { Text } from "./Text";
 
 export const Hero = () => {
   return (
-    <main className="flex flex-row w-full min-h-[120px] h-[100px] md:h-[180px]">
+    <main className="flex flex-row w-full min-h-[100px] h-[100px] md:h-[180px]">
       {/* القسم البرتقالي */}
-      <div className="basis-2/3  md:basis-2/3 bg-orange flex items-center justify-center p-0 md:p-4 h-full">
+      <div className="basis-2/3  md:basis-2/3 bg-orange flex items-center justify-center p-0 md:p-2 h-full">
         <Text />
       </div>
 
