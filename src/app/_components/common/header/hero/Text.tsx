@@ -1,4 +1,11 @@
 import React from "react";
+import { Noto_Kufi_Arabic } from "next/font/google";
+
+const kufi = Noto_Kufi_Arabic({
+  subsets: ["arabic"],
+  weight: ["400", "700"],
+  display: "swap",
+});
 
 interface TextProps {
   className?: string;
@@ -6,7 +13,7 @@ interface TextProps {
 
 export const Text: React.FC<TextProps> = ({ className = "" }) => {
   return (
-    <div className={`${className}`}>
+    <div className={`${kufi.className} ${className}`}>
       <div className="flex flex-col items-center text-center h-full space-y-0">
         {/* الشعار: عربي + إنجليزي */}
         <div className="flex items-center gap-4">
@@ -19,12 +26,12 @@ export const Text: React.FC<TextProps> = ({ className = "" }) => {
         </div>
 
         {/* النص العربي */}
-        <p className="text-base sm:text-lg text-primary font-medium">
+        <p className="text-base sm:text-lg text-primary font-semibold">
           شركة اســـــاد النموذجية
         </p>
 
         {/* النص الإنجليزي */}
-        <p className="text-sm sm:text-base text-gray-400">Asad Model Company</p>
+        <p className="text-sm sm:text-base text-gray-400 font-medium">Asad Model Company</p>
       </div>
     </div>
   );
