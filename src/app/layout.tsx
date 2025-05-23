@@ -2,14 +2,15 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Footer, Header } from "./_components";
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
-  display: 'swap',
+  display: "swap",
   preload: true,
 });
 
 export const metadata = {
-  title: "‏‎+966 50 114 4066‎‏ -شركة امكو - تنظيف منازل فلل شقق نقل اثاث عفش عزل ",
+  title:
+    "‏‎+966 50 114 4066‎‏ -شركة امكو - تنظيف منازل فلل شقق نقل اثاث عفش عزل ",
   description:
     "شركة اسادكو المتحدة افضل شركة تنظيف منازل و نقل اثاث و عفش بالرياض مع ضمان الفك والتركيب كما انها تعد من ارخص شركات النظافة و النقل المنزلي المكتبي او العفش وفي مجال خدمات تاثيث العقارات او العقار او المباني العقاريه سوى مبنى عقاري او مجموعة عقارات او منزل سكني او عقار تجاري او حكومي . بواسطة فريق عمل متخصص محترف او عدة فرق اعمال متخصصه و محترفه في العناية بتقديم الخدمات و تقديم خدمة غسيل المبنى او المنزل السكني او التجاري او الحكومي حيث تقدم جميع خدمات المباني المنزليه و السكنيه و التجاريه و الحكومية وذلك في مجال نظافة و نقل الأثاث وتشمل التالي:- ( مباني منزلية او سكنية قصر قصور حكومية عماره عمائر تجارية غسيل فيلا فلل شقه شقق بيت بيوت مكتب مكاتب معرض معارض صالة صالات رياضيه غرفة غرف دورة دورات مياه حمامات صالون صالونات مجلس مجالس كنب سجاد موكيت ستائر فرش ابواب بوابه بوابات شباك شبابيك حاط جدران نعله نعلات افياش ديكور ديكورات جبس ترويبه اسمنت طرطشه غراء قاعه كوفي شوب تلميع جلي رخام جرانيت درج سيراميك بلاط ارضيه ارضيات الارضيات سلم سلالم ممر ممرات الممرات سطح سطوح سقف اسقف منور سكاي لايت قبه ثريا ثريات ثيل انجيله مسطحات خضراء حوش ملاعب ملعب عزل خزان خزانات الخزانات مكيف مطبخ مطابخ مطعم مطاعم واجهة زجاج واجهات زجاجية حجرية الواجهات الزجاجية تركيب شبك حمام صيانة مكيف شباكي مكيفات اسبلت تكييف مركزي تكييفات مركزية إزالة ترحيل مخلفات او المخلفات او الاستكرات استكرات الشبابيك تعقيم مكافحة حشرات الحشرات رش مبيد حشري المبيدات مبيدات حشريه دفان مع التعقيم وذلك على اعلى معايير الجودة وبواسطة احدث مواد المواد ذات الفعالية العالية و المعدات العالمية وتعد اسادكو من ارقى الشركات بالعاصمه الرياض والمملكه",
   keywords:
@@ -24,7 +25,7 @@ export const metadata = {
     siteName: "شـركـة آمـكـو النموذجية",
     images: [
       {
-        logo: "https://www.amcoksa.com/logo/logo.png",
+        url: "https://www.amcoksa.com/logo/logo.png",
         width: 800,
         height: 600,
         alt: "شـركـة آمـكـو النموذجية",
@@ -97,29 +98,37 @@ export default function RootLayout({
           name="google-site-verification"
           content="sba9tCIoW2AoAikPfDaIj6YWxzI8rmBD-Hpwroi3450"
         />
-        
+
         {/* Add preconnect for performance */}
         <link rel="preconnect" href="https://www.amcoksa.com" />
         <link rel="dns-prefetch" href="https://www.amcoksa.com" />
-        
+
         {/* Add preload for critical resources */}
-        <link 
-          rel="preload" 
-          as="image" 
-          href="/logo/logo.png" 
+        <link
+          rel="preload"
+          as="image"
+          href="/logo/logo.png"
           type="image/png"
           fetchPriority="high"
         />
-        
+
         {/* Add preload for logo images */}
-        <link 
-          rel="preload" 
-          as="image" 
-          href="/logo/asadco-logo.png" 
-          type="image/png"
+        <link
+          rel="preload"
+          as="image"
+          href="/images/saudi-man.jpg"
+          type="image/jpeg"
           fetchPriority="high"
         />
-        
+
+        <meta
+          property="og:image"
+          content="https://amcoksa.com/images/saudi-man.jpg"
+        />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
         {/* Schema markup */}
         <script type="application/ld+json">
           {`
@@ -128,7 +137,7 @@ export default function RootLayout({
       "@type": "Organization",
       "name": "شركة آمـكـو النموذجية",
       "url": "https://www.amcoksa.com",
-      "logo": "https://www.amcoksa.com/logo/logo.png",
+      "logo": "https://amcoksa.com/images/saudi-man.jpg",
    "sameAs": [
   "https://x.com/asad_companySA",
   "https://www.tiktok.com/@asadunitedco",
