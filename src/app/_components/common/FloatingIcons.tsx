@@ -14,7 +14,7 @@ const FloatingIcons: React.FC = () => {
       const documentHeight = document.documentElement.scrollHeight;
 
       setShowPhoneIcon(window.scrollY > 100);
-      setHideIcons(scrollPosition >= documentHeight - 100); // إخفاء الأيقونات قبل نهاية الصفحة بـ100 بكسل
+      setHideIcons(scrollPosition >= documentHeight - 100); 
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -36,12 +36,12 @@ const FloatingIcons: React.FC = () => {
           {/* أيقونة الواتساب */}
           <div className="fixed right-5 bg-green-500 text-white h-12 rounded-md p-2 flex items-center justify-center shadow-lg cursor-pointer z-50">
             <Link
-              href="https://wa.me/966501144066"
+              href="https://wa.me/966555182882"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white flex items-center"
             >
-              <span className="hidden md:inline-block md:mr-2">‏‎+966 50 114 4066‎‏</span> 
+              <span className="hidden md:inline-block md:mr-2">+966 55 518 2882</span> 
               <FaWhatsapp className="text-3xl" />
             </Link>
           </div>
@@ -56,12 +56,12 @@ const FloatingIcons: React.FC = () => {
             }}
           >
             <Link
-              href="mailto:AMCO112025@gmail.com"
+              href="mailto:Fine.Clean@hotmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <p className="text-xl cursor-pointer p-1 rounded-lg">
-                AMCO112025@gmail.com
+                Fine.Clean@hotmail.com
               </p>
             </Link>
           </div>
@@ -71,12 +71,12 @@ const FloatingIcons: React.FC = () => {
             className="fixed left-5 bg-primary shadow-sm shadow-gray text-white h-12 rounded-md p-2 flex items-center justify-center cursor-pointer z-50"
           >
             <Link
-              href="tel:+966501144066"
+              href="tel:+966555182882"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white flex items-center"
             >
-              <span className="hidden md:inline-block md:mr-2">‏‎+966 50 114 4066‎‏</span> 
+              <span className="hidden md:inline-block md:mr-2">+966 55 518 2882</span> 
               <FaPhoneAlt className="text-2xl" />
             </Link>
           </div>

@@ -9,7 +9,7 @@ const RightSections = () => {
         <p className="w-full text-wrap text-justify text-sm md:text-base leading-5 lg:leading-6">
           من أجلكم أنتـم ..
           <br />
-          نحن شركة آمكو ( اساد النموذجية للصيانة والنظافة ) ولتقديم المجالات
+          نحن شركة فاين كلين ( فاين كلين للصيانة والنظافة ) ولتقديم المجالات
           الخدمية واللوجستية التالية:-
           <br />
           شركة تنظيف مبنى مباني قصر قصور عماره عمائر منزل منازل نظافة فيلا فلل
@@ -23,7 +23,7 @@ const RightSections = () => {
         </p>
       </div>
       <Link
-        href="https://wa.me/966501144066"
+        href="https://wa.me/966555182882"
         className="text-white transition hover:text-gray-500/75 text-xl"
         target="_blank"
         rel="noopener noreferrer"

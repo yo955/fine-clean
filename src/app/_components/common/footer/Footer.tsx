@@ -15,14 +15,14 @@ export const Footer = () => {
         <div className="top flex flex-wrap gap-5 md:flex-nowrap justify-between items-center ">
           <div className=" mt-8 font-almarai font-medium">
             <h3 className="text-xl md:text-2xl text-center w-full md:text-right md:w-[80%]">
-              هل أنت مستعد الان لكي تصبح احد عملاء شركة أمكو النموذجية اتصل بنا
+              هل أنت مستعد الان لكي تصبح احد عملاء شركة فاين كلين اتصل بنا
               وكن احد عملائنا المميزين
             </h3>
           </div>
 
           <div className="btn flex-1">
             <Link
-              href="https://wa.me/966501144066"
+              href="https://wa.me/966555182882"
               className="text-white transition hover:text-gray-500/75 text-xl"
               target="_blank"
               rel="noopener noreferrer"
@@ -76,17 +76,17 @@ export const Footer = () => {
             </div>
             <div className="gmail my-2">
               <Link
-                href="mailto:AMCO112025@gmail.com"
+                href="mailto:Fine.Clean@hotmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <p className="text-xl cursor-pointer shadow-sm shadow-gray p-1 rounded-lg">
-                  AMCO112025@gmail.com
+                  Fine.Clean@hotmail.com
                 </p>
               </Link>
             </div>
           </div>
-          <div className="flex flex-col items-center order-2 font-arabic font-bold">
+          {/* <div className="flex flex-col items-center order-2 font-arabic font-bold">
             <h3 className="text-xl font-bold mb-4">روابط سريعة</h3>
             <ul className="flex items-center gap-5 text-xl">
               <li>
@@ -105,11 +105,11 @@ export const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="flex flex-col items-center order-1 md:order-3 font-arabic">
             <h3 className="text-xl mb-4">تواصل معنا</h3>
             <Link
-              href="https://wa.me/966501144066"
+              href="https://wa.me/966555182882"
               className="text-white transition hover:text-gray-500/75 text-xl"
               target="_blank"
               rel="noopener noreferrer"
@@ -117,12 +117,12 @@ export const Footer = () => {
               <FaWhatsapp className="font-bold text-5xl mb-5 hover:shadow-sm hover:shadow-gray rounded-md p-1" />
             </Link>
             <Link
-              href="tel:+966501144066"
+              href="tel:+966555182882"
               className="text-white transition hover:text-gray-500/75 text-xl"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p>‏‎+966 50 114 4066‎‏</p>
+              <p>‏‎+966 55 518 2882‎‏</p>
             </Link>
             {/* <p>info@nomu.com.sa</p> */}
           </div>

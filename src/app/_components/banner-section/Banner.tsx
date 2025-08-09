@@ -18,7 +18,7 @@ const Banner = () => {
         <div className="content m-5 flex flex-col gap-2">
           <div className="title">
             <h2 className="text-3xl lg:text-4xl text-orange text-center">
-              شركة اساد النموذجية للصيانة والنظافة
+              شركة فاين كلين للصيانة والنظافة
             </h2>
           </div>
           <div className="comment text-center">
