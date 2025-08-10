@@ -116,14 +116,14 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/images/saudi-man.jpg"
+          href="/images/saudi-man.webp"
           type="image/jpeg"
           fetchPriority="high"
         />
 
         <meta
           property="og:image"
-          content="https://amcoksa.com/images/saudi-man.jpg"
+          content="https://amcoksa.com/images/saudi-man.webp"
         />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
@@ -137,7 +137,7 @@ export default function RootLayout({
       "@type": "Organization",
       "name": "شركة فاين كلين",
       "url": "https://www.amcoksa.com",
-      "logo": "https://amcoksa.com/images/saudi-man.jpg",
+      "logo": "https://amcoksa.com/images/saudi-man.webp",
    "sameAs": [
   "https://x.com/asad_companySA",
   "https://www.tiktok.com/@asadunitedco",

@@ -11,7 +11,7 @@ const LeftSection = () => {
       </div>
       <div className="w-full min-h-full">
         <Image
-          src={"/images/saudi-man.jpg"}
+          src={"/images/saudi-man.webp"}
           alt="hero-image"
           width={1000}
           height={1000}
