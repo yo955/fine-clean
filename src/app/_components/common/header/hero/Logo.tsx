@@ -11,9 +11,7 @@ export const Logo: React.FC<LogoProps> = ({ className, src }) => {
       <img
         src={src}
         alt="لوجو شركة فاين كلين"
-        fill
-        className="absolute object-cover z-50"
-        priority
+        className="absolute object-cover z-50 w-full h-full"
       />
     </div>
   );

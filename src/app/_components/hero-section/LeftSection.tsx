@@ -12,10 +12,7 @@ const LeftSection = () => {
         <img
           src={"/images/saudi-man.webp"}
           alt="hero-image"
-          width={1000}
-          height={1000}
-          className="bg-cover"
-          priority
+          className="bg-cover "
         />
       </div>
     </div>
