@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 const LeftSection = () => {
@@ -10,7 +9,7 @@ const LeftSection = () => {
         </h3>
       </div>
       <div className="w-full min-h-full">
-        <Image
+        <img
           src={"/images/saudi-man.webp"}
           alt="hero-image"
           width={1000}
