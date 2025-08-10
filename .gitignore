@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/fine-clean
 /.pnp
 .pnp.*
 .yarn/*

@@ -40,6 +40,7 @@ const FloatingIcons: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white flex items-center"
+              dir="ltr"
             >
               <span className="hidden md:inline-block md:mr-2">+966 55 518 2882</span> 
               <FaWhatsapp className="text-3xl" />
@@ -75,6 +76,7 @@ const FloatingIcons: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white flex items-center"
+              dir="ltr"
             >
               <span className="hidden md:inline-block md:mr-2">+966 55 518 2882</span> 
               <FaPhoneAlt className="text-2xl" />
