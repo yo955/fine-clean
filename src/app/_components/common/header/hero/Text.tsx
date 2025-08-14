@@ -21,7 +21,7 @@ export const Text: React.FC<TextProps> = ({ className = "" }) => {
         </h1>
 
         {/* النص الإنجليزي */}
-        <p className="text-sm sm:text-base text-white font-medium">
+        <p className="text-sm sm:text-base md:text-2xl text-white font-medium">
           Fine Clean Company
         </p>
       </div>

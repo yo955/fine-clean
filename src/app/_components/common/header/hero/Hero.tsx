@@ -15,13 +15,13 @@ export const Hero = () => {
         <div className="w-full h-full flex items-center justify-center">
           <Logo
             src="/logo/logo.png"
-            className="w-full h-full object-cover max-w-[180px] max-h-[180px] md:max-w-[90%] md:max-h-[200px]"
+            className="w-full h-full object-cover mt-2 max-w-[200px] max-h-[200px] md:max-w-full md:mt-4 md:max-h-[200px]"
           />
         </div>
       </div>
 
       {/* القسم الرمادي */}
-      <div className="basis-1/12  md:basis-1/4 bg-primary p-2 md:p-4 h-full"></div>
+      <div className="basis-1/12 md:basis-1/4 bg-orange p-2 md:p-4 h-full"></div>
     </main>
   );
 };
