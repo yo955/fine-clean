@@ -4,27 +4,27 @@ import Link from "next/link";
 
 const Advantages = () => {
   return (
-    <section className="max-w-[90%] mx-auto my-20 bg-primary px-2 py-4 md:p-5 rounded-[50px]">
+    <section className="max-w-[90%] mx-auto my-20 bg-orange px-2 py-4 md:p-5 rounded-[50px]">
       <div className="container grid grid-cols-1 lg:grid-cols-2">
         <div className="right mx-5">
           <div className="content">
-            <div className="title shadow-black_gray  shadow-sm  text-center rounded-full ">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl text-orange mb-10 p-4">
+            <div className="title shadow-gray shadow-sm  text-center rounded-full ">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl text-white mb-10 p-4">
                 لماذا تختار خدمتنا؟
               </h2>
             </div>
             <div className="description text-white ">
               <ul className="flex flex-col gap-4">
                 <li className="text-lg md:text-xl flex gap-6 md:gap-8 lg:gap-10">
-                  <span className="text-xl text-orange">✔</span>
+                  <span className="text-xl text-white">✔</span>
                   <p>فريق تنظيف محترف</p>
                 </li>
                 <li className="text-base  md:text-xl flex gap-6 md:lg:gap-8 lg:gap-10">
-                  <span className="text-xl text-orange">✔</span>
+                  <span className="text-xl text-white">✔</span>
                   <p>تقدم أسعارًا وصفقات في متناول الجميع</p>
                 </li>
                 <li className="text-base md:text-xl flex gap-6 md:lg:gap-8 lg:gap-10">
-                  <span className="text-xl text-orange">✔</span>
+                  <span className="text-xl text-white">✔</span>
                   <p>قابلة للاسترداد إذا لم تكن نظيفة</p>
                 </li>
               </ul>
@@ -37,7 +37,7 @@ const Advantages = () => {
             rel="noopener noreferrer"
           >
             <div className="btn my-10">
-              <button className="bg-orange text-xl font-bold flex justify-center items-center p-3 md:p-4 border-none rounded-full w-40 shadow-sm shadow-gray hover:shadow-md hover:bg-amber-400 transition-all duration-300 text-white">
+              <button className="bg-orange text-xl font-bold flex justify-center items-center p-3 md:p-4 border-none rounded-full w-40 shadow-md shadow-gray hover:shadow-md hover:bg-amber-400 transition-all duration-300 text-white">
                 اطلب الآن
               </button>
             </div>

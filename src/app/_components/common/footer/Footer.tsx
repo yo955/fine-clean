@@ -10,7 +10,7 @@ import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa6";
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-white h-fit md:h-[50vh] mt-20 ">
+    <footer className="bg-orange opacity-95 text-white h-fit md:h-[50vh] mt-20 ">
       <div className="container px-5 mx-auto p-10 flex flex-col gap-10">
         <div className="top flex flex-wrap gap-5 md:flex-nowrap justify-between items-center ">
           <div className=" mt-8 font-almarai font-medium">
@@ -27,7 +27,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="mx-auto md:mx-0 bg-transparent text-2xl font-bold flex justify-center items-center p-3 md:p-4  rounded-full w-40 shadow-sm shadow-gray hover:shadow-md hover:border hover:border-gray transition-all duration-300 text-white ">
+              <button className="mx-auto md:mx-0 bg-transparent text-2xl font-bold flex justify-center items-center p-3 md:p-4  rounded-full w-40 shadow-md shadow-gray hover:shadow-md hover:border hover:border-gray transition-all duration-300 text-white ">
                 <span className="ml-1">→</span> اطلب الآن
               </button>
             </Link>

@@ -25,9 +25,9 @@ const FloatingIcons: React.FC = () => {
 
   return (
     <>
-      {!hideIcons && (
+      {showPhoneIcon && !hideIcons && (
         <div
-          className={`container z-50 bg-primary fixed bottom-0 left-0 h-[70px] align-middle flex justify-between items-center shadow-lg shadow-gray transition-all duration-300 ${
+          className={`container z-50 bg-orange opacity-90 fixed bottom-0 left-0 h-[70px] align-middle flex justify-between items-center shadow-lg shadow-gray transition-all duration-300 ${
             showPhoneIcon
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-4"
@@ -49,7 +49,7 @@ const FloatingIcons: React.FC = () => {
           
           {/* GMAIL - Hidden on mobile, shown on desktop */}
           <div
-            className="hidden gmail fixed bg-primary shadow-sm shadow-gray text-white h-12 rounded-md p-2 md:flex items-center justify-center cursor-pointer transition-opacity duration-300 transform z-50"
+            className="hidden gmail fixed bg-orange shadow-sm shadow-gray text-white h-12 rounded-md p-2 md:flex items-center justify-center cursor-pointer transition-opacity duration-300 transform z-50"
             style={{
               top: "50%",
               left: "50%",
@@ -69,7 +69,7 @@ const FloatingIcons: React.FC = () => {
 
           {/* أيقونة الهاتف */}
           <div
-            className="fixed left-5 bg-primary shadow-sm shadow-gray text-white h-12 rounded-md p-2 flex items-center justify-center cursor-pointer z-50"
+            className="fixed left-5 bg-orange shadow-sm shadow-gray text-white h-12 rounded-md p-2 flex items-center justify-center cursor-pointer z-50"
           >
             <Link
               href="tel:+966555182882"
