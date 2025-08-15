@@ -1,5 +1,4 @@
 import React from "react";
-import VideoCommon from "../common/Video";
 import Link from "next/link";
 
 const RightSections = () => {
@@ -49,13 +48,6 @@ const RightSections = () => {
               اطلب الآن
             </button>
           </Link>
-        </div>
-        <div className="video mt-10 h-[250px] flex justify-center items-center">
-          <VideoCommon
-            url="/videos/main-video.mp4"
-            width={100}
-            height={100}
-          />
         </div>
       </div>
     </div>

@@ -1,55 +1,23 @@
 import React from "react";
 import "./banner.css";
 
-const audioFilesLeft = [
-  { title: "تسجيل 1", path: "/audio/recording1.wav" },
-  { title: "تسجيل 2", path: "/audio/recording2.wav" },
-  { title: "تسجيل 3", path: "/audio/recording3.wav" },
-];
-const audioFilesRight = [
-  { title: "تسجيل 1", path: "/audio/recording1.wav" },
-  { title: "تسجيل 2", path: "/audio/recording2.wav" },
-  { title: "تسجيل 3", path: "/audio/recording3.wav" },
-];
 const Banner = () => {
   return (
     <section className="banner-section">
       <div className="container w-full flex flex-col justify-center items-center">
-        <div className="content m-5 flex flex-col gap-2">
-          <div className="title">
-            <h2 className="text-3xl lg:text-4xl text-orange text-center">
-              شركة فاين كلين للصيانة والنظافة
-            </h2>
-          </div>
-          <div className="comment text-center">
-            <h2 className="text-3xl text-white">تعليقات صوتية لعملائنا</h2>
-          </div>
-        </div>
-        <div className="recorder-comments flex flex-col md:flex-row gap-5">
-          <div className="left">
-            <ul className="flex flex-col gap-3 ">
-              {audioFilesLeft.map((file, index) => (
-                <li key={index}>
-                  <audio controls>
-                    <source src={file.path} type="audio/wav" /> متصفحك لا يدعم
-                    تشغيل الملفات الصوتية.
-                  </audio>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="right">
-            <ul className="flex flex-col gap-3">
-              {audioFilesRight.map((file, index) => (
-                <li key={index}>
-                  <audio controls>
-                    <source src={file.path} type="audio/wav" /> متصفحك لا يدعم
-                    تشغيل الملفات الصوتية.
-                  </audio>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="content m-5 flex flex-col gap-4 text-center">
+          <h1 className="text-3xl lg:text-4xl text-orange font-bold">
+            فاين كلين – رفاهية النظافة ✨
+          </h1>
+          <p className="text-white text-lg leading-relaxed max-w-2xl">
+            لأن المكان يعكس ذوق صاحبه، نحن في{" "}
+            <strong>شركة فاين كلين للصيانة والنظافة</strong> نمنحك خدمة تنظيف
+            راقية، بأدق التفاصيل، وبأعلى معايير الجودة. نستخدم تقنيات متطورة
+            ومواد آمنة لنترك وراءنا بيئة نظيفة، أنيقة، ومليئة بالانتعاش.
+          </p>
+          <p className="text-orange text-xl font-semibold">
+            💎 فاين كلين… فخامة تليق بمكانك
+          </p>
         </div>
       </div>
     </section>
