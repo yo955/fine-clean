@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { FaBroom, FaSnowflake, FaBug, FaWater, FaGem } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const services = [
     {
@@ -52,15 +54,35 @@ const services = [
 const ServicesSection = () => {
     return (
         <section className="bg-orange p-8 rounded-lg my-10">
-            <h2 className="text-2xl font-bold mb-6 text-center text-white">
+            <motion.h2
+                className="text-2xl font-bold mb-6 text-center text-white"
+                initial={{ opacity: 0, y: -30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.8 }}
+            >
                 خدمات شركة فاين كلين للخدمات المتكاملة
-            </h2>
-            <h3 className="text-xl font-bold mb-6 text-center text-white"> (نظافة المباني- صيانة المكيفات- رشد المبيدات - عزل الخزنات- نقل اثاث)</h3>
+            </motion.h2>
+
+            <motion.h3
+                className="text-xl font-bold mb-6 text-center text-white"
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+            >
+                (نظافة المباني- صيانة المكيفات- رش المبيدات - عزل الخزنات- نقل اثاث)
+            </motion.h3>
+
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {services.map((service, index) => (
-                    <div
+                    <motion.div
                         key={index}
                         className="bg-gradient-to-br from-orange-400 to-orange-600 text-white p-5 rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{ duration: 0.8, delay: index * 0.2 }}
                     >
                         <div className="flex items-center gap-3 mb-3">
                             {service.icon}
@@ -71,16 +93,22 @@ const ServicesSection = () => {
                                 <li key={idx}>{item}</li>
                             ))}
                         </ul>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
 
             {/* زر اطلب الآن */}
-            <div className="mt-8 flex justify-center">
+            <motion.div
+                className="mt-8 flex justify-center"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.8, delay: 1 }}
+            >
                 <button className="bg-orange hover:scale-100 w-40 h-16 text-white shadow-white font-bold py-3 px-8 rounded-full shadow-md hover:bg-yellow-400 transition-all text-lg md:text-xl">
                     اطلب الآن
                 </button>
-            </div>
+            </motion.div>
         </section>
     );
 };
