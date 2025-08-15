@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.amcoksa.com/sitemap
+
+Sitemap: https://www.fineclean.sa/sitemap.xml
