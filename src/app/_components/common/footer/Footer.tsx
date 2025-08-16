@@ -26,7 +26,7 @@ export const Footer = () => {
               <div className="flex-1 text-center md:text-right ">
                 <h2 className="text-2xl md:text-4xl font-bold font-almarai mb-4 leading-relaxed">
                   هل أنت مستعد الآن لكي تصبح أحد عملاء
-                  <span className="block text-yellow-300">شركة فاين كلين؟</span>
+                  <span className="block text-orange">شركة فاين كلين؟</span>
                 </h2>
                 <p className="text-lg md:text-xl opacity-90 font-medium">
                   اتصل بنا وكن أحد عملائنا المميزين

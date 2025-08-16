@@ -1,6 +1,4 @@
 "use client";
-import React from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 const RightSections = () => {
@@ -131,15 +129,7 @@ const RightSections = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 2 }}
         >
-          <Link
-            href="https://wa.me/966555182882"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="bg-white text-amber-600 text-xl font-bold flex justify-center items-center p-2 md:p-3 lg:p-4 border-2 border-orange rounded-full w-40 shadow-[0_4px_15px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.4)] hover:bg-orange hover:text-white transition-all duration-300 transform hover:scale-105">
-              اطلب الآن
-            </button>
-          </Link>
+
         </motion.div>
       </motion.div>
     </div>

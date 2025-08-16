@@ -1,6 +1,4 @@
 "use client";
-import React from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 const Advantages = () => {
@@ -43,7 +41,7 @@ const Advantages = () => {
           {/* العمود الأيسر - الخدمات */}
           <div
             className="h-full bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-yellow-400 border-x-orange flex flex-col"
-           
+
           >
             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-orange text-center">
               فاين كلين - لمعة تليق بمكانك
@@ -68,7 +66,7 @@ const Advantages = () => {
           {/* العمود الأيمن - المميزات */}
           <div
             className="h-full bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-yellow-400 border-x-orange flex flex-col"
-            
+
           >
             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-orange text-center">
               مميزاتنا
@@ -118,19 +116,7 @@ const Advantages = () => {
           <p className="text-xl text-white max-w-3xl mx-auto">
             نضمن لك الحصول على خدمة ممتازة تلبي توقعاتك، مع فريق دعم متاح على مدار الساعة
           </p>
-          <div className="mt-auto pt-6">
-            <Link href="https://wa.me/966555182882" target="_blank" rel="noopener noreferrer">
-              <motion.button
-                className="w-full md:w-1/2 bg-orange text-white hover:bg-yellow-600 text-xl font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-              >
-                اطلب الآن
-              </motion.button>
-            </Link>
-          </div>
+
         </motion.div>
       </div>
     </section>
