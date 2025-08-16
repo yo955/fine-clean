@@ -4,24 +4,21 @@ import { Text } from "./Text";
 
 export const Hero = () => {
   return (
-    <main className="flex flex-row w-full min-h-[100px] h-[100px] md:h-[180px]">
+    <main className="flex flex-row w-full min-h-[140px] h-[140px] md:h-[220px]">
       {/* القسم البرتقالي */}
-      <div className="basis-2/3  md:basis-2/3 bg-orange flex items-center justify-center p-0 md:p-2 h-full">
+      <div className="basis-2/3 md:basis-2/3 flex items-center justify-center p-2 md:p-4 h-full">
         <Text />
       </div>
 
-      {/* قسم اللوجو - متجاوب */}
-      <div className="basis-2/6  md:basis-1/4 flex items-center justify-center bg-white h-full overflow-visible relative z-10">
-        <div className="w-full h-full flex items-center justify-center">
+      {/* قسم اللوجو - متجاوب ومحسن */}
+      <div className="basis-1/3 md:basis-1/3 flex items-center justify-center bg-white h-full p-1 md:p-2">
+        <div className="w-full h-full flex items-center justify-center max-w-[200px] md:max-w-[300px]">
           <Logo
             src="/logo/logo.png"
-            className="w-full h-full object-cover mt-2 max-w-[200px] max-h-[200px] md:max-w-full md:mt-4 md:max-h-[200px]"
+            className="w-full h-full object-contain max-h-[120px] md:max-h-[200px]"
           />
         </div>
       </div>
-
-      {/* القسم الرمادي */}
-      <div className="basis-1/12 md:basis-1/4 border-2 border-r-amber-400 border-b-amber-500  bg-primary p-2 md:p-4 h-full"></div>
     </main>
   );
 };

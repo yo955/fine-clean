@@ -14,7 +14,7 @@ export default {
       colors: {
         primary: "#2F2D2A",
         white: "#ffffff",
-        orange: "#FDA720",
+        orange: "#D6A336",
         gray: "#F5F5F5",
         menu_color: "#33373d",
         black_gray: "#3f444b",
