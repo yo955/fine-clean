@@ -24,11 +24,10 @@ export const Footer = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-y-amber-400 border-x-orange shadow-2xl">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="flex-1 text-center md:text-right ">
-                <h2 className="text-2xl md:text-4xl font-bold font-almarai mb-4 leading-relaxed">
-                  هل أنت مستعد الآن لكي تصبح أحد عملاء
-                  <span className="block text-orange">شركة فاين كلين؟</span>
+                <h2 className="text-xl text-orange md:text-4xl font-bold font-almarai mb-4 leading-relaxed">
+                  يسعدنا أن تكون أحد عملائنا، ونتعهد بتقديم أفضل الخدمات التي تليق بك.            
                 </h2>
-                <p className="text-lg md:text-xl opacity-90 font-medium">
+                <p className="text-lg text-orange md:text-xl opacity-90 font-medium">
                   اتصل بنا وكن أحد عملائنا المميزين
                 </p>
               </div>

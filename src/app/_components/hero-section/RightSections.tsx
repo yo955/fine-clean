@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const RightSections = () => {
   return (
     <div
-      className="h-full bg-primary  p-8 relative overflow-hidden border border-y-yellow-400 border-x-yellow-600 rounded-lg"
+      className="h-full bg-primary p-4 md:p-8 relative overflow-hidden border border-y-yellow-400 border-x-yellow-600 rounded-lg"
     >
 
       {/* المحتوى الرئيسي */}
@@ -16,14 +16,14 @@ const RightSections = () => {
       >
         <div className="description mb-5">
           <motion.h1
-            className="text-lg md:text-xl font-bold mb-3 text-orange leading-relaxed text-center"
+            className="text-md md:text-xl font-bold mb-3 text-orange leading-relaxed"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
           >
             شركة فاين كلين للخدمات المتكاملة بمكة المكرمة
             <br />
-            <span className="text-orange font-semibold">
+            <span className="text-orange text-sm font-semibold">
               (نظافة المنازل - صيانة المكيفات - رش المبيدات الحشرية - عزل الخزانات - نقل الأثاث)
             </span>
             <br />
