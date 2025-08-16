@@ -21,7 +21,7 @@ export const Hero = () => {
       </div>
 
       {/* القسم الرمادي */}
-      <div className="basis-1/12 md:basis-1/4 bg-orange p-2 md:p-4 h-full"></div>
+      <div className="basis-1/12 md:basis-1/4 border-2 border-r-amber-400 border-b-amber-500  bg-primary p-2 md:p-4 h-full"></div>
     </main>
   );
 };

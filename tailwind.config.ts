@@ -12,7 +12,7 @@ export default {
         almarai: ["Almarai", "sans-serif"],
       },
       colors: {
-        primary: "#1E2537",
+        primary: "#2F2D2A",
         white: "#ffffff",
         orange: "#FDA720",
         gray: "#F5F5F5",

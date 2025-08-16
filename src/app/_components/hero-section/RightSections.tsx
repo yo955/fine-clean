@@ -5,23 +5,9 @@ import { motion } from "framer-motion";
 
 const RightSections = () => {
   return (
-    <motion.div
-      className="h-full bg-orange text-white p-8 relative overflow-hidden border-2 border-amber-500 rounded-lg"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+    <div
+      className="h-full bg-primary  p-8 relative overflow-hidden border border-y-yellow-400 border-x-yellow-600 rounded-lg"
     >
-      {/* خلفية ديكوريّة */}
-      <motion.div
-        className="absolute inset-0 opacity-15"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.15 }}
-        transition={{ duration: 1.2, delay: 0.4 }}
-      >
-        <div className="absolute top-10 left-10 w-32 h-32 bg-yellow-300 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-48 h-48 bg-amber-300 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-yellow-200 rounded-full blur-2xl"></div>
-      </motion.div>
 
       {/* المحتوى الرئيسي */}
       <motion.div
@@ -32,81 +18,131 @@ const RightSections = () => {
       >
         <div className="description mb-5">
           <motion.h1
-            className="text-lg md:text-xl font-bold mb-3"
+            className="text-lg md:text-xl font-bold mb-3 text-white leading-relaxed text-center"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
           >
-            شركة فاين كلين للنظافة والصيانة بمكة المكرمة
+            شركة فاين كلين للخدمات المتكاملة بمكة المكرمة
+            <br />
+            <span className="text-orange font-semibold">
+              (نظافة المنازل - صيانة المكيفات - رش المبيدات الحشرية - عزل الخزانات - نقل الأثاث)
+            </span>
+            <br />
           </motion.h1>
 
-          <motion.p
-            className="w-full text-wrap text-justify text-sm md:text-base leading-5 lg:leading-6"
+
+          <motion.h2
+            className="text-base text-gray md:text-lg font-semibold mt-4 mb-3 text-"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.7 }}
           >
-            في <strong>فاين كلين</strong>، نقدم خدمات تنظيف وصيانة احترافية في مكة
-            المكرمة بأعلى معايير الجودة، باستخدام أحدث المعدات والمواد العالمية
-            الصديقة للبيئة.
-          </motion.p>
+            * خدماتنا تشتمل التالي *
+          </motion.h2>
 
-          <motion.h2
-            className="text-base md:text-lg font-semibold mt-4 mb-2"
+          {/* خدمة نظافة المنازل */}
+          <motion.div
+            className="mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.9 }}
           >
-            خدماتنا تشمل:
-          </motion.h2>
+            <h3 className="font-semibold mb-2 text-orange">⁠* خدمة نظافة المنازل:</h3>
+            <p className="text-sm md:text-base text-justify leading-6 text-white">
+              تخيل منزلك يتحول إلى واحة متلألئة من النقاء، حيث يتدخل فريقنا بلمسة
+              فنية ليُزيل كل أثر للتعب، مُستخدمين أحدث تقنيات التنظيف بالبخار
+              والمواد الآمنة بيئيًا. نُعيد البريق لأرضياتك، ونُنعش مفروشاتك،
+              ونُعقم كل زاوية لتنعم ببيئة صحية تُلامس الروح وتُجدد طاقتك.
+            </p>
+          </motion.div>
 
-          <motion.ul
-            className="list-disc pl-5 space-y-1 text-sm md:text-base"
+          {/* خدمة صيانة المكيفات */}
+          <motion.div
+            className="mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 1.1 }}
           >
-            <li>تنظيف المباني، الفلل، الشقق، العمائر، المكاتب، المعارض، والقاعات.</li>
-            <li>غسيل وتلميع الأرضيات، الرخام، الجرانيت، السيراميك، والبلاط.</li>
-            <li>تنظيف السجاد، الموكيت، الكنب، المجالس، الستائر، والأبواب والشبابيك.</li>
-            <li>
-              عزل وصيانة الخزانات والمكيفات، وتنظيف المطابخ والواجهات الزجاجية
-              والحجرية.
-            </li>
-            <li>إزالة المخلفات، مكافحة الحشرات، التعقيم، وتركيب شبك الحمام.</li>
-            <li>تنسيق المسطحات الخضراء، الثيل، والملاعب.</li>
-          </motion.ul>
+            <h3 className="font-semibold mb-2 text-orange">⁠* خدمة صيانة المكيفات:</h3>
+            <p className="text-sm md:text-base text-justify leading-6 text-white">
+              في قلب حرارة مكة، نُعيد لمكيفاتك همس الانتعاش البارد! ففريقنا من
+              الخبراء يُقدم صيانة دقيقة وشاملة تُطيل عمر جهازك، وتُحسن جودة الهواء،
+              وتُخفض فواتيرك. استمتع بجو مثالي يُقاوم القيظ ويُجدد حيويتك، مع
+              ضمان أداء لا يُضاهى وراحة بال تدوم طوال العام.
+            </p>
+          </motion.div>
 
-          <motion.p
-            className="mt-4 text-sm md:text-base"
+          {/* خدمة رش المبيدات */}
+          <motion.div
+            className="mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 1.3 }}
           >
-            نحن نلتزم بتقديم خدمات عالية الجودة تلبي توقعات عملائنا في مكة
-            المكرمة، مما يجعلنا واحدة من أفضل{" "}
-            <strong>شركات التنظيف والصيانة</strong> في المنطقة.
-          </motion.p>
+            <h3 className="font-semibold mb-2 text-orange">* خدمة رش المبيدات الحشرية:</h3>
+            <p className="text-sm md:text-base text-justify leading-6 text-white">
+              ودّع القلق من أي زائر غير مرغوب فيه! نُبيد الآفات ببراعة فائقة وأمان
+              مطلق، مُستخدمين مبيدات عصرية عديمة الرائحة ومُعتمدة عالميًا، آمنة
+              تمامًا على عائلتك وحيواناتك الأليفة. نُقدم لك درعًا واقيًا لمنزلك،
+              مع ضمانات طويلة الأمد تُعيد لك الطمأنينة وتُحوّل مساحتك إلى ملاذ آمن
+              ونظيف.
+            </p>
+          </motion.div>
+
+          {/* خدمة عزل الخزانات */}
+          <motion.div
+            className="mb-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.7, delay: 1.5 }}
+          >
+            <h3 className="font-semibold mb-2 text-orange">* خدمة عزل الخزانات:</h3>
+            <p className="text-sm md:text-base text-justify leading-6 text-white">
+              حافظ على كنز النقاء في منزلك! نُحصّن خزاناتك بأساليب مبتكرة ومواد
+              عزل فائقة الجودة كالإيبوكسي، لنضمن نقاء مياهك وحمايتها من أي تسرب أو
+              تلوث. استثمر في صحتك وراحة بالك مع درع حصين يُطيل عمر خزانك ويُوفر
+              لك مياهًا نقية وصحية بلا حدود.
+            </p>
+          </motion.div>
+
+          {/* خدمة نقل الأثاث */}
+          <motion.div
+            className="mb-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.7, delay: 1.7 }}
+          >
+            <h3 className="font-semibold mb-2 text-orange">* خدمة نقل الأثاث:</h3>
+            <p className="text-sm md:text-base text-justify leading-6 text-white">
+              اجعل انتقالك رحلة فاخرة بلا عناء! نُحوّل مهمة نقل أثاثك إلى تجربة
+              سلسة ومُبهرة، حيث يُعامل فريقنا المحترف كل قطعة من كنوزك الثمينة
+              بدقة متناهية. من التغليف الفني بأجود المواد، وصولًا للتركيب المثالي
+              في منزلك الجديد، نُقدم لك اطمئنانًا مطلقًا وضمانًا حقيقيًا يُحافظ
+              على كل قطعة كأنها لم تُغادر مكانها.
+            </p>
+          </motion.div>
         </div>
 
+        {/* زرار واتساب */}
         <motion.div
           className="inline-block"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, delay: 1.5 }}
+          transition={{ duration: 0.7, delay: 2 }}
         >
           <Link
             href="https://wa.me/966555182882"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-white text-amber-600 text-xl font-bold flex justify-center items-center p-2 md:p-3 lg:p-4 border-2 border-white rounded-full w-40 shadow-[0_4px_15px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.4)] hover:bg-amber-50 transition-all duration-300 transform hover:scale-105">
+            <button className="bg-white text-amber-600 text-xl font-bold flex justify-center items-center p-2 md:p-3 lg:p-4 border-2 border-white rounded-full w-40 shadow-[0_4px_15px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.4)] hover:bg-orange hover:text-white transition-all duration-300 transform hover:scale-105">
               اطلب الآن
             </button>
           </Link>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 

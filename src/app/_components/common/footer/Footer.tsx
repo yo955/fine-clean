@@ -9,7 +9,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
-    <footer className="relative bg-orange text-white mt-20 overflow-hidden">
+    <footer className="relative bg-primary text-white mt-20 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
@@ -21,9 +21,9 @@ export const Footer = () => {
       <div className="relative container px-5 mx-auto py-12">
         {/* Top Section - Call to Action */}
         <div className="mb-16">
-          <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/20 shadow-2xl">
+          <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-y-amber-400 border-x-orange shadow-2xl">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-              <div className="flex-1 text-center md:text-right">
+              <div className="flex-1 text-center md:text-right ">
                 <h2 className="text-2xl md:text-4xl font-bold font-almarai mb-4 leading-relaxed">
                   هل أنت مستعد الآن لكي تصبح أحد عملاء
                   <span className="block text-yellow-300">شركة فاين كلين؟</span>
@@ -33,7 +33,7 @@ export const Footer = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 ">
                 <Link
                   href="https://wa.me/966555182882"
                   className="group"
@@ -67,16 +67,16 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
 
           {/* Contact Information */}
-          <div className="text-center md:text-right space-y-6">
+          <div className="text-center md:text-right space-y-6 hidden md:block ">
             <h3 className="text-2xl font-bold font-arabic mb-6 flex items-center justify-center md:justify-end gap-3">
               <FaPhone className="text-yellow-300" />
               تواصل معنا
             </h3>
 
-            <div className="space-y-4">
+            <div className="space-y-4 ">
               <Link
                 href="https://wa.me/966555182882"
-                className="group flex items-center justify-center md:justify-end gap-3 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 border border-transparent hover:border-white/20"
+                className="group flex items-center justify-center md:justify-end gap-3 p-4 rounded-xl border border-y-amber-400 border-x-orange bg-white/5 hover:bg-white/10 transition-all duration-300 border border-transparent hover:border-white/20"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -86,7 +86,7 @@ export const Footer = () => {
 
               <Link
                 href="tel:+966555182882"
-                className="group flex items-center justify-center md:justify-end gap-3 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 border border-transparent hover:border-white/20"
+                className="group border border-y-amber-400 border-x-orange flex items-center justify-center md:justify-end gap-3 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300  hover:border-white/20"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -102,7 +102,7 @@ export const Footer = () => {
               شركة فاين كلين
             </h3>
 
-            <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+            <div className="bg-white/5 border border-y-amber-400 border-x-orange rounded-xl p-6 ">
               <p className="text-lg font-medium mb-4">
                 خدمات التنظيف المتخصصة
               </p>
@@ -123,7 +123,7 @@ export const Footer = () => {
             <div className="space-y-4">
               <Link
                 href="mailto:Fine.Clean@hotmail.com"
-                className="group flex items-center justify-center md:justify-start gap-3 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 border border-transparent hover:border-white/20"
+                className="group flex items-center border border-y-amber-400 border-x-orange justify-center md:justify-start gap-3 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300  hover:border-white/20"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -133,7 +133,7 @@ export const Footer = () => {
 
               <Link
                 href="http://www.twitter.com/FineClean2025"
-                className="group flex items-center justify-center md:justify-start gap-3 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 border border-transparent hover:border-white/20"
+                className="group flex items-center border border-y-amber-400 border-x-orange justify-center md:justify-start gap-3 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300  hover:border-white/20"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -145,7 +145,7 @@ export const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="mt-16 pt-8 border-t border-white/20 text-center">
+        <div className="mt-16 pt-8 border-t border-orange text-center">
           <p className="text-white/70 font-medium">
             © 2025 شركة فاين كلين - جميع الحقوق محفوظة
           </p>

@@ -27,7 +27,7 @@ const FloatingIcons: React.FC = () => {
     <>
       {showPhoneIcon && !hideIcons && (
         <div
-          className={`container z-50 bg-orange opacity-90 fixed bottom-0 left-0 h-[70px] align-middle flex justify-between items-center shadow-lg shadow-gray transition-all duration-300 ${
+          className={`container z-50 bg-primary opacity-90 fixed bottom-0 left-0 h-[70px] align-middle flex justify-between items-center shadow-lg shadow-gray transition-all duration-300 ${
             showPhoneIcon
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-4"

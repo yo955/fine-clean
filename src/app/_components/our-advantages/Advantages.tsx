@@ -20,7 +20,7 @@ const Advantages = () => {
   ];
 
   return (
-    <section className="max-w-[90%] mx-auto my-20 bg-orange px-2 py-8 md:p-8 rounded-3xl shadow-xl">
+    <section className="max-w-[90%] mx-auto my-20 bg-primary shadow-lg px-2 py-8 md:p-8 rounded-3xl ">
       <div className="container mx-auto">
         {/* العنوان الرئيسي */}
         <motion.div
@@ -34,21 +34,18 @@ const Advantages = () => {
             لماذا تختار خدمتنا؟
           </h2>
           <div className="w-24 h-1 bg-white mx-auto mb-6"></div>
-          <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl  max-w-3xl mx-auto leading-relaxed text-orange">
             نوفر حلولاً متكاملة لتنظيف وصيانة مساحتك باحترافية وجودة عالية
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           {/* العمود الأيسر - الخدمات */}
-          <motion.div
-            className="h-full bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-white/20 flex flex-col"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.8 }}
+          <div
+            className="h-full bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-yellow-400 border-x-orange flex flex-col"
+           
           >
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white text-center">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-orange text-center">
               فاين كلين - لمعة تليق بمكانك
             </h3>
             <ul className="space-y-6 flex-grow">
@@ -66,17 +63,14 @@ const Advantages = () => {
                 </motion.li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* العمود الأيمن - المميزات */}
-          <motion.div
-            className="h-full bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-white/20 flex flex-col"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.8 }}
+          <div
+            className="h-full bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-yellow-400 border-x-orange flex flex-col"
+            
           >
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white text-center">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-orange text-center">
               مميزاتنا
             </h3>
             <ul className="space-y-6 flex-grow">
@@ -107,12 +101,12 @@ const Advantages = () => {
                 </motion.li>
               ))}
             </ul>
-          </motion.div>
+          </div>
         </div>
 
         {/* قسم ضمان الجودة */}
         <motion.div
-          className="mt-12 bg-white/20 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-white/30 text-center"
+          className="mt-12 bg-white/20 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-yellow-400 border-x-orange text-center"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
