@@ -105,7 +105,7 @@ export const Footer = () => {
               <p className="text-lg font-medium mb-4">
                 خدمات التنظيف المتخصصة
               </p>
-              <div className="flex items-center justify-center gap-2 text-orange">
+              <div className="flex items-center justify-center gap-2 text-white">
                 <FaMapMarkerAlt />
                 <span>المملكة العربية السعودية - مكة المكرمة</span>
               </div>
