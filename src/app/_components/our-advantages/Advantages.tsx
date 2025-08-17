@@ -28,11 +28,11 @@ const Advantages = () => {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-orange mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-orange mb-6">
             لماذا تختار خدمتنا؟
           </h2>
           <div className="w-24 h-1 bg-orange mx-auto mb-6"></div>
-          <p className="text-xl md:text-2xl  max-w-3xl mx-auto leading-relaxed text-white">
+          <p className="text-md sm:text-xl md:text-2xl  max-w-3xl mx-auto leading-relaxed text-white">
             نوفر حلولاً متكاملة لتنظيف وصيانة مساحتك باحترافية وجودة عالية
           </p>
         </motion.div>
@@ -43,7 +43,7 @@ const Advantages = () => {
             className="h-full bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-yellow-400 border-x-orange flex flex-col"
 
           >
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-orange text-center">
+            <h3 className="text-lg sm:text-2xl md:text-3xl font-bold mb-6 text-orange text-center">
               فاين كلين - لمعة تليق بمكانك
             </h3>
             <ul className="space-y-6 flex-grow">
@@ -57,7 +57,7 @@ const Advantages = () => {
                   transition={{ duration: 0.6, delay: index * 0.2 }}
                 >
                   <div className="bg-orange-300/80 p-1 rounded-full mr-4 flex-shrink-0 mt-1"></div>
-                  <p className="text-lg md:text-lg text-white/90 leading-relaxed">{item}</p>
+                  <p className="text-md sm:text-lg md:text-lg text-white/90 leading-relaxed">{item}</p>
                 </motion.li>
               ))}
             </ul>
@@ -93,8 +93,8 @@ const Advantages = () => {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-white">{feature.title}</h4>
-                    <p className="text-white/90">{feature.desc}</p>
+                    <h4 className="text-md md:text-xl font-semibold text-white">{feature.title}</h4>
+                    <p className="text-white/90 text-sm sm:text-md md:text-xl ">{feature.desc}</p>
                   </div>
                 </motion.li>
               ))}
@@ -110,10 +110,10 @@ const Advantages = () => {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8 }}
         >
-          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-orange">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-orange">
             ضمان رضاك هو أولويتنا
           </h3>
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-md md:text-xl text-white max-w-3xl mx-auto">
             نضمن لك الحصول على خدمة ممتازة تلبي توقعاتك، مع فريق دعم متاح على مدار الساعة
           </p>
 

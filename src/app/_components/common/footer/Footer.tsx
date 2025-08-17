@@ -18,16 +18,16 @@ export const Footer = () => {
       <div className="absolute top-10 right-10 w-20 h-20 bg-white/5 rounded-full blur-xl"></div>
       <div className="absolute bottom-10 left-10 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
 
-      <div className="relative container px-5 mx-auto py-12">
+      <div className="relative container px-2 md:px-5 mx-auto py-8 md:py-12">
         {/* Top Section - Call to Action */}
         <div className="mb-16">
           <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-y-amber-400 border-x-orange shadow-2xl">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="flex-1 text-center md:text-right ">
-                <h2 className="text-xl text-orange md:text-4xl font-bold font-almarai mb-4 leading-relaxed">
+                <h2 className="text-xl md:text-4xl text-orange font-bold font-almarai mb-4 leading-relaxed">
                   يسعدنا أن تكون أحد عملائنا، ونتعهد بتقديم أفضل الخدمات التي تليق بك.            
                 </h2>
-                <p className="text-lg text-white md:text-xl opacity-90 font-medium">
+                <p className="text-md sm:text-lg md:text-xl text-white  opacity-90 font-medium">
                   اتصل بنا وكن أحد عملائنا المميزين
                 </p>
               </div>
@@ -39,7 +39,7 @@ export const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold text-xl px-8 py-4 rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 min-w-[200px] justify-center">
+                  <button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold text-xl px-4 md:px-8 py-2 md:py-4 rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 min-w-[200px] justify-center">
                     <FaWhatsapp className="text-2xl" />
                     <span>اطلب الآن</span>
                     <span className="group-hover:translate-x-1 transition-transform duration-300">←</span>
@@ -52,7 +52,7 @@ export const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-bold text-lg px-8 py-3 rounded-2xl border border-white/30 hover:border-white/50 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 min-w-[200px] justify-center">
+                  <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-bold text-lg px-4 md:px-8 py-2 md:py-4 rounded-2xl border border-white/30 hover:border-white/50 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 min-w-[200px] justify-center">
                     <FaPhone className="text-lg" />
                     <span>اتصل بنا</span>
                   </button>
@@ -122,7 +122,7 @@ export const Footer = () => {
             <div className="space-y-4">
               <Link
                 href="mailto:Fine.Clean@hotmail.com"
-                className="group flex items-center border border-y-amber-400 border-x-orange justify-center md:justify-start gap-3 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300  hover:border-white/20"
+                className="group flex items-center border border-y-amber-400 border-x-orange justify-center md:justify-start gap-3 md:p-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300  hover:border-white/20"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -132,7 +132,7 @@ export const Footer = () => {
 
               <Link
                 href="http://www.twitter.com/FineClean2025"
-                className="group flex items-center border border-y-amber-400 border-x-orange justify-center md:justify-start gap-3 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300  hover:border-white/20"
+                className="group flex items-center border border-y-amber-400 border-x-orange justify-center md:justify-start gap-3 md:p-4 p-2 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300  hover:border-white/20"
                 target="_blank"
                 rel="noopener noreferrer"
               >

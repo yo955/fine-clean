@@ -63,9 +63,9 @@ const services = [
 
 const ServicesSection = () => {
     return (
-        <section className="bg-primary p-8 rounded-lg my-10">
+        <section className="bg-primary p-4 md:p-8 rounded-lg my-10">
             <motion.h2
-                className="text-2xl font-bold mb-6 text-center text-orange"
+                className="text-lg md:text-2xl font-bold mb-6 text-center text-orange"
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
