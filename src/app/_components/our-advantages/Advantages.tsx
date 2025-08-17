@@ -111,7 +111,7 @@ const Advantages = () => {
           transition={{ duration: 0.8 }}
         >
           <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-orange">
-            ضمان رضاك هو أولويتنا
+             رضاك هو أولويتنا
           </h3>
           <p className="text-md md:text-xl text-white max-w-3xl mx-auto">
             نضمن لك الحصول على خدمة ممتازة تلبي توقعاتك، مع فريق دعم متاح على مدار الساعة
