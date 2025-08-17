@@ -5,7 +5,7 @@ import FloatingIcons from "../common/FloatingIcons";
 
 const HeroSection = () => {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 mb-10">
+    <section className="flex flex-col-reverse md:flex-row mb-10">
       <RightSections />
       <LeftSection />
       <FloatingIcons />

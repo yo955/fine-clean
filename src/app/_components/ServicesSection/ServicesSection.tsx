@@ -65,7 +65,7 @@ const ServicesSection = () => {
     return (
         <section className="bg-primary p-8 rounded-lg my-10">
             <motion.h2
-                className="text-2xl font-bold mb-6 text-center text-white"
+                className="text-2xl font-bold mb-6 text-center text-orange"
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -75,7 +75,7 @@ const ServicesSection = () => {
             </motion.h2>
 
             <motion.h3
-                className="text-xl font-bold mb-6 text-center text-orange"
+                className="text-xl font-bold mb-6 text-center text-white"
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}

@@ -27,7 +27,7 @@ export const Footer = () => {
                 <h2 className="text-xl text-orange md:text-4xl font-bold font-almarai mb-4 leading-relaxed">
                   يسعدنا أن تكون أحد عملائنا، ونتعهد بتقديم أفضل الخدمات التي تليق بك.            
                 </h2>
-                <p className="text-lg text-orange md:text-xl opacity-90 font-medium">
+                <p className="text-lg text-white md:text-xl opacity-90 font-medium">
                   اتصل بنا وكن أحد عملائنا المميزين
                 </p>
               </div>
@@ -97,7 +97,7 @@ export const Footer = () => {
 
           {/* Company Info */}
           <div className="text-center space-y-6">
-            <h3 className="text-2xl font-bold font-arabic mb-6">
+            <h3 className="text-2xl font-bold font-arabic mb-6 text-orange">
               شركة فاين كلين
             </h3>
 
@@ -105,7 +105,7 @@ export const Footer = () => {
               <p className="text-lg font-medium mb-4">
                 خدمات التنظيف المتخصصة
               </p>
-              <div className="flex items-center justify-center gap-2 text-yellow-300">
+              <div className="flex items-center justify-center gap-2 text-orange">
                 <FaMapMarkerAlt />
                 <span>المملكة العربية السعودية - مكة المكرمة</span>
               </div>
@@ -114,7 +114,7 @@ export const Footer = () => {
 
           {/* Social Media & Email */}
           <div className="text-center md:text-left space-y-6">
-            <h3 className="text-2xl font-bold font-arabic mb-6 flex items-center justify-center md:justify-start gap-3">
+            <h3 className="text-2xl text-orange font-bold font-arabic mb-6 flex items-center justify-center md:justify-start gap-3">
               تابعنا
               <FaTwitter className="text-blue-400" />
             </h3>

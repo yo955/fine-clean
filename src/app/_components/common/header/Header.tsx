@@ -6,7 +6,7 @@ import { Hero } from "./hero";
 
 export const Header = () => {
   return (
-    <header className="main-header mb-1">
+    <header className="main-header mb-1 border-b-2 border-orange">
       <Hero />
       {/* <List/> */}
     </header>

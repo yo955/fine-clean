@@ -28,11 +28,11 @@ const Advantages = () => {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-orange mb-6">
             لماذا تختار خدمتنا؟
           </h2>
-          <div className="w-24 h-1 bg-white mx-auto mb-6"></div>
-          <p className="text-xl md:text-2xl  max-w-3xl mx-auto leading-relaxed text-orange">
+          <div className="w-24 h-1 bg-orange mx-auto mb-6"></div>
+          <p className="text-xl md:text-2xl  max-w-3xl mx-auto leading-relaxed text-white">
             نوفر حلولاً متكاملة لتنظيف وصيانة مساحتك باحترافية وجودة عالية
           </p>
         </motion.div>
@@ -110,7 +110,7 @@ const Advantages = () => {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8 }}
         >
-          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-orange">
             ضمان رضاك هو أولويتنا
           </h3>
           <p className="text-xl text-white max-w-3xl mx-auto">
