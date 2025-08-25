@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { FaBroom, FaSnowflake, FaBug, FaWater, FaGem } from "react-icons/fa";
+import { FaBroom, FaSnowflake, FaBug, FaWater, FaGem, FaTruck } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const services = [
@@ -50,7 +50,7 @@ const services = [
         ]
     },
     {
-        icon: <FaWater className="text-orange text-3xl" />,
+        icon: <FaTruck  className="text-orange text-3xl" />,
         title: "خدمات النقل",
         items: [
             "نقل الأثاث داخل وخارج مكة باحترافية وأمان.",
