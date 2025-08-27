@@ -16,8 +16,9 @@ export const metadata = {
   keywords:
     "تنظيف الفلل, تنظيف المنازل, خدمات تنظيف, تنظيف واجهات, تنظيف خزانات, تنظيف شقق, تنظيف كنب, تنظيف سجاد, تنظيف موكيت, تنظيف مطابخ, نقل أثاث بمكة المكرمة, نقل عفش بمكة المكرمة, مكافحة حشرات, رش مبيدات, عزل خزانات, غسيل كنب, صيانة مكيفات, تنظيف واجهات مباني, صيانة منزلية, خدمات تنظيف بمكة المكرمة",
   author: "شـركـة فايـن كليـن",
-  icons:{
-     icon: "/images/logo.png",
+  icons: {
+    icon: '/favicon.ico',
+
   },
   openGraph: {
     title:
@@ -56,6 +57,8 @@ export default function RootLayout({
         {/* Performance optimizations */}
         <link rel="preconnect" href="https://www.fineclean.sa" />
         <link rel="dns-prefetch" href="https://www.fineclean.sa" />
+
+
 
         {/* Preload critical images */}
         <link
