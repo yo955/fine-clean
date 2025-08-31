@@ -10,7 +10,7 @@ const FloatingIcons: React.FC = () => {
     <>
 
       <div
-        className={`container z-50 bg-primary opacity-90 fixed bottom-0 left-0 h-[70px] align-middle flex justify-between items-center shadow-lg shadow-gray transition-all duration-300 ${"opacity-100 translate-y-0"}`}
+        className={`w-full z-50 bg-primary opacity-90 fixed bottom-0 left-0 h-[70px] align-middle flex justify-between items-center shadow-lg shadow-gray transition-all duration-300 ${"opacity-100 translate-y-0"}`}
       >
         {/* أيقونة الواتساب */}
         <div className="fixed right-5 bg-green-500 text-white h-12 rounded-md p-2 flex items-center justify-center shadow-lg cursor-pointer z-50">

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const RightSections = () => {
   return (
     <div
-      className="h-full bg-primary p-4 md:p-8 relative overflow-hidden border border-y-yellow-400 border-x-yellow-600 rounded-lg"
+      className="h-full w-full bg-primary p-4 md:p-8 relative overflow-hidden border border-y-yellow-400 border-x-yellow-600 rounded-lg"
     >
 
       {/* المحتوى الرئيسي */}
