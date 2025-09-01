@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 
 const LeftSection = () => {
   return (
@@ -13,13 +12,11 @@ const LeftSection = () => {
       </div>
 
       {/* الصورة */}
-      <div className="w-full relative h-[300px] lg:h-1/2">
-        <Image
-          src="/images/saudi-man.jpg"
+      <div className="w-full relative h-[300px] lg:h-1/2 flex justify-center">
+        <img
+          src="/images/saudi-man.png"
           alt="hero-image"
-          fill
-          className="object-contain rounded-xl"
-          priority
+          className="object-contain rounded-xl w-full h-full"
         />
       </div>
 
