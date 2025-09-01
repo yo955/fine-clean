@@ -24,10 +24,7 @@ const LeftSection = () => {
       <div className="video w-[90%] h-auto mb-2 lg:mb-0 flex justify-center items-center">
         <video
           src="/videos/fine-video.mp4"
-          autoPlay
           controls
-          loop
-          playsInline
           aria-label="fine-video"
           className="w-full max-h-[300px] rounded-xl shadow-lg border-4 border-orange object-contain"
         />
