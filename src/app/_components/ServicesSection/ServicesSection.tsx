@@ -50,7 +50,7 @@ const services = [
         ]
     },
     {
-        icon: <FaTruck  className="text-orange text-3xl" />,
+        icon: <FaTruck className="text-orange text-3xl" />,
         title: "خدمات النقل",
         items: [
             "نقل الأثاث داخل وخارج مكة باحترافية وأمان.",
@@ -63,7 +63,7 @@ const services = [
 
 const ServicesSection = () => {
     return (
-        <section className="bg-primary p-4 md:p-8 rounded-lg my-10">
+        <section className="bg-primary p-4 md:p-8 rounded-lg my-10" >
             <motion.h2
                 className="text-lg md:text-2xl font-bold mb-6 text-center text-orange"
                 initial={{ opacity: 0, y: -30 }}
@@ -71,9 +71,10 @@ const ServicesSection = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.8 }}
             >
-                خدمات شركة فاين كلين للخدمات المتكاملة
+                خدمات شركة فاين كلين للخدمات المنزلية المتكاملة
             </motion.h2>
 
+          
             <motion.h3
                 className="text-xl font-bold mb-6 text-center text-white"
                 initial={{ opacity: 0, y: -20 }}
@@ -81,7 +82,7 @@ const ServicesSection = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
             >
-                (نظافة المباني- صيانة المكيفات- رش المبيدات - عزل الخزنات- نقل اثاث)
+                (نظافة المباني- صيانة المكيفات- مكافحة الحشرات - عزل الخزنات- نقل اثاث)
             </motion.h3>
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 ">

@@ -21,10 +21,10 @@ const RightSections = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
           >
-            شركة فاين كلين للخدمات المتكاملة بمكة المكرمة
+            شركة فاين كلين للخدمات المنزلية المتكاملة بمكة المكرمة
             <br />
             <span className="text-orange text-sm font-semibold">
-              (نظافة المنازل - صيانة المكيفات - رش المبيدات الحشرية - عزل الخزانات - نقل الأثاث)
+              (نظافة المنازل - صيانة المكيفات -مكافحة الحشرات - عزل الخزانات - نقل الأثاث)
             </span>
             <br />
           </motion.h1>
@@ -78,7 +78,7 @@ const RightSections = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 1.3 }}
           >
-            <h3 className="font-semibold mb-2 text-orange">* خدمة رش المبيدات الحشرية:</h3>
+            <h3 className="font-semibold mb-2 text-orange">* خدمة مكافحة الحشرات:</h3>
             <p className="text-sm md:text-base text-justify leading-6 text-orange">
               ودّع القلق من أي زائر غير مرغوب فيه! نُبيد الآفات ببراعة فائقة وأمان
               مطلق، مُستخدمين مبيدات عصرية عديمة الرائحة ومُعتمدة عالميًا، آمنة
