@@ -11,7 +11,7 @@ export default function Home() {
       <ServicesSection />
       <Banner />
       <Advantages />
-       <MapComponent width={100} radius={0}/>
+      <MapComponent width={100} radius={0} />
     </>
   );
 }

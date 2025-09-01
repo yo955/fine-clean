@@ -3,7 +3,7 @@ import React from "react";
 
 const LeftSection = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full">
+    <div className="flex flex-col items-center w-full">
       {/* النص */}
       <div className="p-5 text-center w-full flex justify-center items-center">
         <h3 className="text-lg md:text-3xl p-1 font-mono font-black text-orange">
@@ -12,7 +12,7 @@ const LeftSection = () => {
       </div>
 
       {/* الصورة */}
-      <div className="w-full relative h-[300px] lg:h-1/2 flex justify-center">
+      <div className="w-full relative h-[300px] lg:h-[37%] flex justify-center">
         <img
           src="/images/saudi-man.png"
           alt="hero-image"
@@ -20,16 +20,18 @@ const LeftSection = () => {
         />
       </div>
 
-      {/* Video */}
+      {/* الفيديو */}
       <div className="video w-[90%] h-auto mb-2 lg:mb-0 flex justify-center items-center">
         <video
           src="/videos/fine-video.mp4"
+          autoPlay
           controls
+          loop
+          playsInline
           aria-label="fine-video"
-          className="w-full max-h-[300px] rounded-xl shadow-lg object-contain"
+          className="w-full max-h-[300px] rounded-xl shadow-lg border-4 border-orange object-contain"
         />
       </div>
-
     </div>
   );
 };
