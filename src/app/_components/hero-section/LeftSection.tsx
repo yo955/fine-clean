@@ -26,7 +26,7 @@ const LeftSection = () => {
           src="/videos/fine-video.mp4"
           controls
           aria-label="fine-video"
-          className="w-full max-h-[300px] rounded-xl shadow-lg border-4 border-orange object-contain"
+          className="w-full max-h-[300px] rounded-xl shadow-lg border-4 border-orange object-fill"
         />
       </div>
     </div>
