@@ -17,12 +17,12 @@ export const metadata = {
     "تنظيف الفلل, تنظيف المنازل, خدمات تنظيف, تنظيف واجهات, تنظيف خزانات, تنظيف شقق, تنظيف كنب, تنظيف سجاد, تنظيف موكيت, تنظيف مطابخ, نقل أثاث بمكة المكرمة, نقل عفش بمكة المكرمة, مكافحة حشرات, رش مبيدات, عزل خزانات, غسيل كنب, صيانة مكيفات, تنظيف واجهات مباني, صيانة منزلية, خدمات تنظيف بمكة المكرمة",
   author: "شـركـة فايـن كليـن",
   icons: {
-    icon: '/favicon.ico',
+    icon: '/images/logo.png',
 
   },
   openGraph: {
     title:
-      "شركة فاين كلين - تنظيف منازل نظافة فلل غسيل شقق نقل اثاث عفش - عزل خزان ‏‎+966 55 518 2882",
+      "شركة فاين كلين - تنظيف منازل نظافة فلل غسيل شقق نقل اثاث عفش - عزل خزان \u202A+966 55 518 2882\u202C",
     description:
       "شركة تنظيف منازل بمكة المكرمة تقدم خدمات تنظيف فلل وشقق ونقل أثاث وعفش وعزل خزانات وصيانة مكيفات ورش مبيدات بأعلى جودة.",
     url: "https://www.fineclean.sa",
@@ -71,7 +71,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/images/saudi-man.webp"
+          href="/images/saudi-man.png"
           type="image/jpeg"
           fetchPriority="high"
         />
@@ -79,7 +79,7 @@ export default function RootLayout({
         {/* Open Graph image */}
         <meta
           property="og:image"
-          content="https://www.fineclean.sa/images/saudi-man.webp"
+          content="https://www.fineclean.sa/images/saudi-man.png"
         />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
