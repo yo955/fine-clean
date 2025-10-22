@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Footer, Header } from "./_components";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,12 +18,11 @@ export const metadata = {
     "تنظيف الفلل, تنظيف المنازل, خدمات تنظيف, تنظيف واجهات, تنظيف خزانات, تنظيف شقق, تنظيف كنب, تنظيف سجاد, تنظيف موكيت, تنظيف مطابخ, نقل أثاث بمكة المكرمة, نقل عفش بمكة المكرمة, مكافحة حشرات, رش مبيدات, عزل خزانات, غسيل كنب, صيانة مكيفات, تنظيف واجهات مباني, صيانة منزلية, خدمات تنظيف بمكة المكرمة",
   author: "شـركـة فايـن كليـن",
   icons: {
-    icon: '/images/logo.png',
-
+    icon: "/images/logo.png",
   },
   openGraph: {
     title:
-      "شركة فاين كلين - تنظيف منازل نظافة فلل غسيل شقق نقل اثاث عفش - عزل خزان \u202A+966 55 518 2882\u202C",
+      "شركة فاين كلين - تنظيف منازل نظافة فلل غسيل شقق نقل اثاث عفش - عزل خزان ‏+966 55 518 2882‏",
     description:
       "شركة تنظيف منازل بمكة المكرمة تقدم خدمات تنظيف فلل وشقق ونقل أثاث وعفش وعزل خزانات وصيانة مكيفات ورش مبيدات بأعلى جودة.",
     url: "https://www.fineclean.sa",
@@ -44,21 +44,24 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ar" dir="rtl">
       <head>
+        {/* ✅ Google Tag Manager 2 */}
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5NS7P72D');`}
+        </Script>
+
         {/* Google site verification */}
 
         {/* Performance optimizations */}
         <link rel="preconnect" href="https://www.fineclean.sa" />
         <link rel="dns-prefetch" href="https://www.fineclean.sa" />
-
-
 
         {/* Preload critical images */}
         <link
@@ -115,6 +118,45 @@ export default function RootLayout({
         </script>
       </head>
       <body className={inter.className}>
+        {/* ✅ Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5NS7P72D"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+
+        {/* ✅ Statcounter Code */}
+        <Script id="statcounter" strategy="afterInteractive">
+          {`
+            var sc_project=13177711; 
+            var sc_invisible=1; 
+            var sc_security="22d72dd5"; 
+          `}
+        </Script>
+        <Script
+          src="https://www.statcounter.com/counter/counter.js"
+          strategy="afterInteractive"
+        />
+        <noscript>
+          <div className="statcounter">
+            <a
+              title="free web stats"
+              href="https://statcounter.com/"
+              target="_blank"
+            >
+              <img
+                className="statcounter"
+                src="https://c.statcounter.com/13177711/0/22d72dd5/1/"
+                alt="free web stats"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </a>
+          </div>
+        </noscript>
+
         <Header />
         <main className="font-almarai">{children}</main>
         <Footer />
