@@ -27,12 +27,12 @@ const MobileList: React.FC<MobileListProps> = ({ ListItem }) => {
 
   return (
     <>
-      <div className="md:hidden mx-2 bg-gray">
+      <div className="md:hidden mx-2 p-2 bg-gray">
         <button
           onClick={toggleMenu}
           className="text-3xl text-menu_color hover:text-orange"
         >
-          {menuOpen ? <FaTimes /> : <FaBars />}
+          {menuOpen ? <FaTimes className="text-5xl" /> : <FaBars className="text-5xl" />}
         </button>
       </div>
 

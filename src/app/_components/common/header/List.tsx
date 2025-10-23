@@ -2,27 +2,21 @@
 import React from "react";
 import Link from "next/link";
 import MobileList from "./hero/MobileList";
-import Dropdown from "./Dropdown";
 
 interface ListItemType {
   title: string;
   href?: string;
-  dropdown?: { title: string; href: string }[];
 }
 
 const ListItem: ListItemType[] = [
   { title: "الرئيسية", href: "/" },
-  { title: "من نحن", href: "/" },
-  { title: "مقالات", href: "/" },
+  { title: "من نحن", href: "/about" },
+  { title: "رسالتنا", href: "/messages" },
   {
     title: "خدماتنا",
-    href: "/",
-    dropdown: [
-      { title: "المجالات الخدمية", href: "/" },
-      { title: "المجالات الانشائية", href: "/" },
-    ],
+    href: "/services",
   },
-  { title: "اتصل بنا", href: "/" },
+  { title: "اتصل بنا", href: "/contact" },
 ];
 
 export const List: React.FC = () => {
@@ -32,25 +26,17 @@ export const List: React.FC = () => {
 
       {/* القائمة الرئيسية في الشاشات الأكبر */}
       <nav>
-        <ul className="hidden md:flex bg-gray p-5 justify-center items-center gap-10">
+        <ul className="hidden md:flex bg-gray mb-1 justify-center items-center gap-10 p-8 " >
           {ListItem.map((item) =>
-            item.dropdown ? (
-              <li key={item.title} className="relative group">
-                <Dropdown
-                  title={item.title}
-                  href={item.href!}
-                  items={item.dropdown}
-                />
-              </li>
-            ) : (
-              <li key={item.title}>
-                <Link href={item.href || "/"}>
-                  <h1 className="text-menu_color md:text-orange md:hover:text-orange font-almarai font-bold text-2xl">
-                    {item.title}
-                  </h1>
-                </Link>
-              </li>
-            )
+          (
+            <li key={item.title}>
+              <Link href={item.href || "/"}>
+                <h1 className="text-menu_color md:text-orange md:hover:text-orange font-almarai font-bold text-2xl">
+                  {item.title}
+                </h1>
+              </Link>
+            </li>
+          )
           )}
         </ul>
       </nav>
